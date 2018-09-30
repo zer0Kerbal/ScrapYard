@@ -196,3 +196,4 @@ ModelManifest.xml
 *.dll
 /.vs/config/applicationhost.config
 /.vs/VSWorkspaceState.json
+*.zip
