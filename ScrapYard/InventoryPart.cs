@@ -40,7 +40,6 @@ namespace ScrapYard
         private float _dryCost = 0;
         public string Name { get { return _name; } }
         public float DryCost { get { return _dryCost; } }
-        public bool setupCorrectly = true;
         private bool _doNotStore = false;
         public bool DoNotStore
         {
@@ -161,8 +160,6 @@ namespace ScrapYard
         /// <param name="originPartSnapshot">The <see cref="ProtoPartSnapshot"/> to use as the basis of the <see cref="InventoryPart"/>.</param>
         public InventoryPart(ProtoPartSnapshot originPartSnapshot)
         {
-            try
-            {
                 _name = originPartSnapshot.partInfo.name;
                 if (ScrapYard.Instance.Settings.PartBlacklist.Contains(Name))
                 {
@@ -190,13 +187,6 @@ namespace ScrapYard
                     }
                 }
                 ID = originPartSnapshot.persistentId;
-            }
-            catch(Exception ex)
-            {
-                Logging.Log("[ScrapYard]: Error creating Inventory Part for " + originPartSnapshot.partName + " Error: " + ex);
-                setupCorrectly = false;
-                return;
-            }
         }
 
         /// <summary>

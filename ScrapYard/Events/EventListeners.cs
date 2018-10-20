@@ -1,6 +1,7 @@
 ﻿using KSP.UI.Screens;
 using ScrapYard.Modules;
 using ScrapYard.Utilities;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -82,17 +83,23 @@ namespace ScrapYard
                 return;
             }
             Logging.DebugLog("Recovered");
-            foreach (ProtoPartSnapshot pps in vessel.protoPartSnapshots)
-            {
-                InventoryPart recoveredPart = new InventoryPart(pps);
-                if (!recoveredPart.setupCorrectly) continue;
-                recoveredPart.TrackerModule.TimesRecovered++;
-                ScrapYard.Instance.TheInventory.AddPart(recoveredPart);
-                if (HighLogic.CurrentGame.Parameters.CustomParams<SaveSpecificSettings>().OverrideFunds)
+                foreach (ProtoPartSnapshot pps in vessel.protoPartSnapshots)
                 {
-                    Funding.Instance?.AddFunds(-1 * recoveredPart.DryCost, TransactionReasons.VesselRecovery);
+                    try
+                    {
+                        InventoryPart recoveredPart = new InventoryPart(pps);
+                        recoveredPart.TrackerModule.TimesRecovered++;
+                        ScrapYard.Instance.TheInventory.AddPart(recoveredPart);
+                        if (HighLogic.CurrentGame.Parameters.CustomParams<SaveSpecificSettings>().OverrideFunds)
+                        {
+                            Funding.Instance?.AddFunds(-1 * recoveredPart.DryCost, TransactionReasons.VesselRecovery);
+                        }
+                    }
+                    catch(Exception ex)
+                    {
+                        Logging.LogException(ex);
+                    }
                 }
-            }
         }
 
         public void VesselRolloutEvent(ShipConstruct vessel)
