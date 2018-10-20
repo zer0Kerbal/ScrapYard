@@ -85,6 +85,7 @@ namespace ScrapYard
             foreach (ProtoPartSnapshot pps in vessel.protoPartSnapshots)
             {
                 InventoryPart recoveredPart = new InventoryPart(pps);
+                if (!recoveredPart.setupCorrectly) continue;
                 recoveredPart.TrackerModule.TimesRecovered++;
                 ScrapYard.Instance.TheInventory.AddPart(recoveredPart);
                 if (HighLogic.CurrentGame.Parameters.CustomParams<SaveSpecificSettings>().OverrideFunds)

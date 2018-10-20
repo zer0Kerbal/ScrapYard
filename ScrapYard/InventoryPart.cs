@@ -38,10 +38,9 @@ namespace ScrapYard
         private string _name = "";
         [Persistent]
         private float _dryCost = 0;
-
         public string Name { get { return _name; } }
         public float DryCost { get { return _dryCost; } }
-
+        public bool setupCorrectly = true;
         private bool _doNotStore = false;
         public bool DoNotStore
         {
@@ -162,34 +161,42 @@ namespace ScrapYard
         /// <param name="originPartSnapshot">The <see cref="ProtoPartSnapshot"/> to use as the basis of the <see cref="InventoryPart"/>.</param>
         public InventoryPart(ProtoPartSnapshot originPartSnapshot)
         {
-            _name = originPartSnapshot.partInfo.name;
-            if (ScrapYard.Instance.Settings.PartBlacklist.Contains(Name))
+            try
             {
-                DoNotStore = true;
-            }
-            float fuelCost;
-            ShipConstruction.GetPartCosts(originPartSnapshot, originPartSnapshot.partInfo, out _dryCost, out fuelCost);
-
-            //Save modules
-            if (originPartSnapshot.modules != null)
-            {
-                foreach (ProtoPartModuleSnapshot module in originPartSnapshot.modules)
+                _name = originPartSnapshot.partInfo.name;
+                if (ScrapYard.Instance.Settings.PartBlacklist.Contains(Name))
                 {
-                    string name = module.moduleName;
-                    bool isTracker = name.Equals("ModuleSYPartTracker");
-                    if (isTracker || moduleNameMatchesAnything(name)) //only save if there is a potential match
+                    DoNotStore = true;
+                }
+                float fuelCost;
+                ShipConstruction.GetPartCosts(originPartSnapshot, originPartSnapshot.partInfo, out _dryCost, out fuelCost);
+
+                //Save modules
+                if (originPartSnapshot.modules != null)
+                {
+                    foreach (ProtoPartModuleSnapshot module in originPartSnapshot.modules)
                     {
-                        ConfigNode saved = module.moduleValues;
-                        _allModules.Add(saved);
-                        if (isTracker)
+                        string name = module.moduleName;
+                        bool isTracker = name.Equals("ModuleSYPartTracker");
+                        if (isTracker || moduleNameMatchesAnything(name)) //only save if there is a potential match
                         {
-                            TrackerModule = new TrackerModuleWrapper(saved);
+                            ConfigNode saved = module.moduleValues;
+                            _allModules.Add(saved);
+                            if (isTracker)
+                            {
+                                TrackerModule = new TrackerModuleWrapper(saved);
+                            }
                         }
                     }
                 }
+                ID = originPartSnapshot.persistentId;
             }
-
-            ID = originPartSnapshot.persistentId;
+            catch(Exception ex)
+            {
+                Logging.Log("[ScrapYard]: Error creating Inventory Part for " + originPartSnapshot.partName + " Error: " + ex);
+                setupCorrectly = false;
+                return;
+            }
         }
 
         /// <summary>
