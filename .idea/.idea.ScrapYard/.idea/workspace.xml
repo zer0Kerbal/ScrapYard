@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5609f7cc-44f4-4a2e-91fc-56cac8fd3b60" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ScrapYard/KRASHWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ScrapYard/KRASHWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScrapYard/PartTracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ScrapYard/PartTracker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScrapYard/ScrapYard.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ScrapYard/ScrapYard.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScrapYard_ContractConfigurator/ScrapYard_ContractConfigurator.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ScrapYard_ContractConfigurator/ScrapYard_ContractConfigurator.csproj" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScrapYard/PartTracker.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+              <folding>
+                <marker date="1554410732274" expanded="false" signature="6:85" ph="..." />
+                <marker date="1554410732274" expanded="true" signature="106:15093" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="137:15091" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="173:253" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="287:549" ph="{...}" />
+                <marker date="1554410732274" expanded="false" signature="559:790" ph="Fields" />
+                <marker date="1554410732274" expanded="false" signature="800:1076" ph="Properties" />
+                <marker date="1554410732274" expanded="true" signature="853:1046" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="879:1036" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="1086:7112" ph="Public Methods" />
+                <marker date="1554410732274" expanded="true" signature="1118:4825" ph="Add" />
+                <marker date="1554410732274" expanded="true" signature="1138:1306" ph="/// Takes a list of parts and registers it as a build ... " />
+                <marker date="1554410732274" expanded="true" signature="1360:2940" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="1403:1455" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="1725:2584" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="2141:2381" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="2257:2363" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="2402:2570" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="2635:2859" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="2749:2845" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="2950:3140" ph="/// Takes a list of part ConfigNodes and registers it as a build ... " />
+                <marker date="1554410732274" expanded="true" signature="3204:4802" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="3247:3299" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="3583:4445" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="4003:4242" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="4118:4224" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="4263:4431" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="4496:4720" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="4610:4706" ph="{...}" />
+                <marker date="1554410732274" expanded="false" signature="4835:7078" ph="Get" />
+                <marker date="1554410732274" expanded="true" signature="4855:5117" ph="/// Gets the number of builds for a part ... " />
+                <marker date="1554410732274" expanded="true" signature="5198:5401" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="5241:5295" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="5411:5673" ph="/// Gets the number of builds for a part ... " />
+                <marker date="1554410732274" expanded="true" signature="5760:5963" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="5803:5857" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="5973:6228" ph="/// Gets the number of uses of a part ... " />
+                <marker date="1554410732274" expanded="true" signature="6307:6508" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="6350:6404" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="6518:6769" ph="/// Gets the number of uses of a part ... " />
+                <marker date="1554410732274" expanded="true" signature="6854:7055" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="6897:6951" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="7122:11460" ph="Private Methods" />
+                <marker date="1554410732274" expanded="true" signature="7154:7427" ph="/// Adds a single use to the useTracker. Automatically determines type ... " />
+                <marker date="1554410732274" expanded="true" signature="7486:8364" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="7636:7729" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="7746:7927" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="7977:8061" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="8078:8154" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="8374:8740" ph="/// Adds a single build to the buildTracker ... " />
+                <marker date="1554410732274" expanded="true" signature="8822:9815" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="8972:9071" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="9088:9271" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="9355:9441" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="9517:9595" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="9825:10030" ph="/// Gets the number of builds for an InventoryPart ... " />
+                <marker date="1554410732274" expanded="true" signature="10096:10627" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="10244:10595" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="10288:10581" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="10637:10836" ph="/// Gets the number of uses for an InventoryPart ... " />
+                <marker date="1554410732274" expanded="true" signature="10900:11425" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="11048:11393" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="11092:11379" ph="{...}" />
+                <marker date="1554410732274" expanded="false" signature="11470:15085" ph="State" />
+                <marker date="1554410732274" expanded="true" signature="11515:15060" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="11541:12929" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="11779:12879" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="12954:15050" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="13098:13162" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="13238:15036" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="13280:14763" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="13789:13977" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="14006:14716" ph="{...}" />
+                <marker date="1554410732274" expanded="true" signature="14804:15018" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScrapYard/API/APIManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14">
+              <caret line="421" column="23" selection-start-line="421" selection-start-column="23" selection-end-line="421" selection-end-column="23" />
+              <folding>
+                <marker date="1547758866000" expanded="false" signature="6:175" ph="..." />
+                <marker date="1547758866000" expanded="true" signature="196:25290" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="203:587" ph="/// This is the remote-side of the API, where all calls through the wrapper funnel through. ... " />
+                <marker date="1547758866000" expanded="true" signature="622:25288" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="702:786" ph="/// A static instance of the APIManager ... " />
+                <marker date="1547758866000" expanded="true" signature="828:926" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="854:916" ph="{...}" />
+                <marker date="1547758866000" expanded="false" signature="936:13269" ph="Inventory Manipulation" />
+                <marker date="1547758866000" expanded="true" signature="975:1318" ph="/// Takes a List of Parts and returns the Parts that are present in the inventory.  ... " />
+                <marker date="1547758866000" expanded="true" signature="1421:2135" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="1498:1567" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="1836:2093" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="2000:2079" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="2145:2483" ph="/// Takes a List of part ConfigNodes and returns the ConfigNodes that are present in the inventory.  ... " />
+                <marker date="1547758866000" expanded="true" signature="2604:3342" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="2681:2756" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="3043:3300" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="3207:3286" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="3352:3615" ph="/// Adds a list of parts to the Inventory ... " />
+                <marker date="1547758866000" expanded="true" signature="3710:4178" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="3787:3839" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="3880:4168" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="3996:4090" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="4188:4451" ph="/// Adds a list of parts to the Inventory ... " />
+                <marker date="1547758866000" expanded="true" signature="4552:5026" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="4629:4681" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="4728:5016" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="4844:4938" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="5036:5392" ph="/// Adds a single part to the inventory, increments the recovery tracker if specified ... " />
+                <marker date="1547758866000" expanded="true" signature="5477:5883" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="5554:5612" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="5713:5795" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="5893:6249" ph="/// Adds a single part to the inventory, increments the recovery tracker if specified ... " />
+                <marker date="1547758866000" expanded="true" signature="6340:6746" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="6417:6475" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="6576:6658" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="6756:7084" ph="/// Removes a single part from the inventory. ... " />
+                <marker date="1547758866000" expanded="true" signature="7169:7523" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="7246:7304" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="7533:7861" ph="/// Removes a single part from the inventory. ... " />
+                <marker date="1547758866000" expanded="true" signature="7952:8306" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="8029:8087" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="8316:8535" ph="/// Sells/Discards the list of parts out of the inventory ... " />
+                <marker date="1547758866000" expanded="true" signature="8598:8831" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="8675:8729" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="8841:9060" ph="/// Sells/Discards the list of parts out of the inventory ... " />
+                <marker date="1547758866000" expanded="true" signature="9129:9362" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="9206:9260" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="9372:9713" ph="/// Finds an InventoryPart for a given part ... " />
+                <marker date="1547758866000" expanded="true" signature="9798:10146" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="9875:9932" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="10156:10497" ph="/// Finds an InventoryPart for a given part ... " />
+                <marker date="1547758866000" expanded="true" signature="10588:10936" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="10665:10722" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="10946:11193" ph="/// Finds an InventoryPart for a given ID ... " />
+                <marker date="1547758866000" expanded="true" signature="11251:11594" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="11328:11385" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="11451:11559" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="11604:11772" ph="/// Gets all parts in the inventory as a list of ConfigNodes ... " />
+                <marker date="1547758866000" expanded="true" signature="11828:12389" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="11905:11962" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="11979:12251" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="12145:12237" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="12284:12354" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="12399:12610" ph="/// Refreshes a part node to be fresh and not from the inventory ... " />
+                <marker date="1547758866000" expanded="true" signature="12668:13227" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="12745:12803" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="12820:13088" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="13121:13191" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="13279:17057" ph="Vessel Processing" />
+                <marker date="1547758866000" expanded="true" signature="13313:13557" ph="/// Removes inventory parts, refunds funds, marks it as tracked ... " />
+                <marker date="1547758866000" expanded="true" signature="13622:14452" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="13693:13750" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="13889:14038" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="14160:14218" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="14462:14706" ph="/// Removes inventory parts, refunds funds, marks it as tracked ... " />
+                <marker date="1547758866000" expanded="true" signature="14781:15638" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="14852:14909" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="15071:15220" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="15342:15400" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="15648:15803" ph="/// Records a build in the part tracker ... " />
+                <marker date="1547758866000" expanded="true" signature="15866:15946" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="15956:16117" ph="/// Records a build in the part tracker ... " />
+                <marker date="1547758866000" expanded="true" signature="16186:16266" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="16276:16535" ph="/// Sets whether a vessel is tracked or not ... " />
+                <marker date="1547758866000" expanded="true" signature="16604:17020" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="16668:16984" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="16816:16970" ph="{...}" />
+                <marker date="1547758866000" expanded="false" signature="17067:21683" ph="Part Tracker" />
+                <marker date="1547758866000" expanded="true" signature="17096:17373" ph="/// Gets the number of builds for a part ... " />
+                <marker date="1547758866000" expanded="true" signature="17435:17551" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="17561:17860" ph="/// Gets the number of builds for a part ... " />
+                <marker date="1547758866000" expanded="true" signature="17932:18052" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="18062:18331" ph="/// Gets the number of uses of a part ... " />
+                <marker date="1547758866000" expanded="true" signature="18391:18505" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="18515:18806" ph="/// Gets the number of uses of a part ... " />
+                <marker date="1547758866000" expanded="true" signature="18876:18994" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="19004:19299" ph="/// Gets the unique ID for the current part. ... " />
+                <marker date="1547758866000" expanded="true" signature="19347:19425" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="19435:19730" ph="/// Gets the unique ID for the current part. ... " />
+                <marker date="1547758866000" expanded="true" signature="19784:19862" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="19872:20182" ph="/// Gets the number of times a part has been recovered.  ... " />
+                <marker date="1547758866000" expanded="true" signature="20230:20323" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="20333:20642" ph="/// Gets the number of times a part has been recovered. ... " />
+                <marker date="1547758866000" expanded="true" signature="20696:20789" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="20799:21030" ph="/// Checks if the part is pulled from the inventory or is new ... " />
+                <marker date="1547758866000" expanded="true" signature="21086:21217" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="21227:21458" ph="/// Checks if the part is pulled from the inventory or is new ... " />
+                <marker date="1547758866000" expanded="true" signature="21520:21651" ph="{...}" />
+                <marker date="1547758866000" expanded="false" signature="21693:24478" ph="Settings" />
+                <marker date="1547758866000" expanded="true" signature="21745:21920" ph="/// Gets the list of blacklisted parts. This is readonly. ... " />
+                <marker date="1547758866000" expanded="true" signature="21982:22105" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="22115:22268" ph="/// Gets the value of the AutoApplyInventory setting ... " />
+                <marker date="1547758866000" expanded="true" signature="22320:22407" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="22417:22571" ph="/// Sets the value of the AutoApplyInventory setting ... " />
+                <marker date="1547758866000" expanded="true" signature="22633:22721" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="22765:22945" ph="/// Gets the value of the ModEnabled save-specific setting for the current save ... " />
+                <marker date="1547758866000" expanded="true" signature="22989:23072" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="23082:23264" ph="/// Gets the value of the UseInventory save-specific setting for the current save ... " />
+                <marker date="1547758866000" expanded="true" signature="23310:23411" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="23421:23601" ph="/// Gets the value of the UseTracker save-specific setting for the current save ... " />
+                <marker date="1547758866000" expanded="true" signature="23645:23744" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="23754:23937" ph="/// Gets the value of the OverrideFunds save-specific setting for the current save ... " />
+                <marker date="1547758866000" expanded="true" signature="23984:24086" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="24096:24295" ph="/// The percentage of funds returned for selling parts when OverrideFunds is active, for this save ... " />
+                <marker date="1547758866000" expanded="true" signature="24344:24449" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="24555:24883" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="24581:24776" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="24807:24873" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="24950:25282" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="24976:25174" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="25192:25272" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ScrapYard/Events/EventListeners.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="117" column="23" lean-forward="true" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
+              <folding>
+                <marker date="1547758866000" expanded="false" signature="6:140" ph="..." />
+                <marker date="1547758866000" expanded="true" signature="161:10314" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="195:10312" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="384:1327" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="454:1317" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="1370:2383" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="2463:3442" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="2602:3346" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="2679:3332" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="2853:3314" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="2998:3292" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="3514:4517" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="3585:3637" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="3757:4507" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="3799:4355" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="4162:4333" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="4395:4489" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="4579:5148" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="4650:4702" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="4765:4855" ph="/* If vessel not processed, then take parts ... */" />
+                <marker date="1547758866000" expanded="true" signature="4946:4998" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="5193:5980" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="5264:5316" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="5479:5970" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="6046:6201" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="6088:6191" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="6263:6317" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="6368:6553" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="6443:6543" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="6604:6789" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="6679:6779" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="6867:7353" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="7061:7270" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="7144:7256" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="7396:7525" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="7628:10306" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="7662:10188" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="7730:7832" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="7853:10174" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="7989:8061" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="8275:8700" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="8420:8678" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="8861:9701" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="9097:9254" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="9726:10111" ph="{...}" />
+                <marker date="1547758866000" expanded="true" signature="10205:10296" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScrapYard/KRASHWrapper.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+              <folding>
+                <marker date="1554410004824" expanded="false" signature="6:155" ph="..." />
+                <marker date="1554410004824" expanded="true" signature="177:16358" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="206:16356" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="483:792" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="492:788" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="521:755" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="869:928" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="1036:1643" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="1064:1623" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="1157:1618" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="1479:1612" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="1692:2778" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="1720:2751" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="1730:2656" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="1826:2595" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="2179:2514" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="2324:2410" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="2677:2746" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="2829:3425" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="2906:3404" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="2935:3331" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="3063:3252" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="3598:3776" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="3880:4655" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="4094:4634" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="4123:4561" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="4251:4482" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="4762:5354" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="4790:5333" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="4819:5260" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="4947:5181" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="5436:6005" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="5464:5984" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="5493:5911" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="5621:5832" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="6092:6670" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="6120:6649" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="6149:6576" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="6277:6497" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="6754:7329" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="6782:7308" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="6811:7235" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="6939:7156" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="7417:7995" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="7445:7974" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="7474:7901" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="7602:7822" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="8040:8582" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="8068:8561" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="8097:8488" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="8225:8409" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="8628:9372" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="8690:9341" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="8719:9258" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="8847:9169" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="9416:10041" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="9463:10024" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="9492:9955" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="9620:9880" ph="{...}" />
+                <marker date="1554410004824" expanded="false" signature="10045:14922" ph="APIMethods" />
+                <marker date="1554410004824" expanded="true" signature="10127:10275" ph="/* Adds a listener to the Sim Menu Event. When the initial KRASH menu is entered the method will ... */" />
+                <marker date="1554410004824" expanded="true" signature="10344:10598" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="10722:10985" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="11065:11206" ph="/* Adds a listener to the Sim Start Event. When the simulation is started the method will ... */" />
+                <marker date="1554410004824" expanded="true" signature="11276:11531" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="11657:11921" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="12001:12193" ph="/* Adds a listener to the Sim Restart Event. When the simulation is restarted the method will ... */" />
+                <marker date="1554410004824" expanded="true" signature="12265:12522" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="12652:12918" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="12998:13179" ph="/* Adds a listener to the Sim Termination Event. When the simulation is terminated the method will ... */" />
+                <marker date="1554410004824" expanded="true" signature="13255:13516" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="13654:13924" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="14004:14185" ph="/* Adds a listener to the Sim Termination Event. When the simulation is terminated the method will ... */" />
+                <marker date="1554410004824" expanded="true" signature="14255:14510" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="14642:14906" ph="{...}" />
+                <marker date="1554410004824" expanded="false" signature="14926:15822" ph="InternalFunctions" />
+                <marker date="1554410004824" expanded="true" signature="15163:15342" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="15172:15338" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="15221:15308" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="15549:15808" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="15918:16353" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="15948:16040" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="16099:16232" ph="{...}" />
+                <marker date="1554410004824" expanded="true" signature="16236:16349" ph="/* if (Planetarium.GetUniversalTime () - firstUpdate &gt; 5) ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>addBuild</find>
+      <find>addbuild</find>
+      <find>adduse</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ScrapYard/KRASHWrapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ScrapYard/API/APIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ScrapYard/PartTracker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ScrapYard/Events/EventListeners.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ScrapYard/KRASHWrapper.cs" />
+        <option value="$PROJECT_DIR$/ScrapYard/PartTracker.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="10" />
+    <option name="y" value="10" />
+    <option name="width" value="1340" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ScrapYard" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ScrapYard" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ScrapYard" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ScrapYard/KRASHWrapper.cs" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5609f7cc-44f4-4a2e-91fc-56cac8fd3b60" name="Default Changelist" comment="" />
+      <created>1554409402892</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554409402892</updated>
+      <workItem from="1554409405400" duration="55000" />
+      <workItem from="1554409603538" duration="91000" />
+      <workItem from="1554409907786" duration="1208000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1354000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="10" y="10" width="1340" height="728" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25734156" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Build" visible="true" weight="0.3294702" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294702" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ScrapYard/KRASHWrapper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+          <folding>
+            <marker date="1554410004824" expanded="false" signature="6:155" ph="..." />
+            <marker date="1554410004824" expanded="true" signature="177:16358" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="206:16356" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="483:792" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="492:788" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="521:755" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="869:928" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="1036:1643" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="1064:1623" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="1157:1618" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="1479:1612" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="1692:2778" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="1720:2751" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="1730:2656" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="1826:2595" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="2179:2514" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="2324:2410" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="2677:2746" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="2829:3425" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="2906:3404" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="2935:3331" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="3063:3252" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="3598:3776" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="3880:4655" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="4094:4634" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="4123:4561" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="4251:4482" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="4762:5354" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="4790:5333" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="4819:5260" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="4947:5181" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="5436:6005" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="5464:5984" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="5493:5911" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="5621:5832" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="6092:6670" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="6120:6649" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="6149:6576" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="6277:6497" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="6754:7329" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="6782:7308" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="6811:7235" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="6939:7156" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="7417:7995" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="7445:7974" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="7474:7901" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="7602:7822" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="8040:8582" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="8068:8561" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="8097:8488" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="8225:8409" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="8628:9372" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="8690:9341" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="8719:9258" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="8847:9169" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="9416:10041" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="9463:10024" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="9492:9955" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="9620:9880" ph="{...}" />
+            <marker date="1554410004824" expanded="false" signature="10045:14922" ph="APIMethods" />
+            <marker date="1554410004824" expanded="true" signature="10127:10275" ph="/* Adds a listener to the Sim Menu Event. When the initial KRASH menu is entered the method will ... */" />
+            <marker date="1554410004824" expanded="true" signature="10344:10598" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="10722:10985" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="11065:11206" ph="/* Adds a listener to the Sim Start Event. When the simulation is started the method will ... */" />
+            <marker date="1554410004824" expanded="true" signature="11276:11531" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="11657:11921" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="12001:12193" ph="/* Adds a listener to the Sim Restart Event. When the simulation is restarted the method will ... */" />
+            <marker date="1554410004824" expanded="true" signature="12265:12522" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="12652:12918" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="12998:13179" ph="/* Adds a listener to the Sim Termination Event. When the simulation is terminated the method will ... */" />
+            <marker date="1554410004824" expanded="true" signature="13255:13516" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="13654:13924" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="14004:14185" ph="/* Adds a listener to the Sim Termination Event. When the simulation is terminated the method will ... */" />
+            <marker date="1554410004824" expanded="true" signature="14255:14510" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="14642:14906" ph="{...}" />
+            <marker date="1554410004824" expanded="false" signature="14926:15822" ph="InternalFunctions" />
+            <marker date="1554410004824" expanded="true" signature="15163:15342" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="15172:15338" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="15221:15308" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="15549:15808" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="15918:16353" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="15948:16040" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="16099:16232" ph="{...}" />
+            <marker date="1554410004824" expanded="true" signature="16236:16349" ph="/* if (Planetarium.GetUniversalTime () - firstUpdate &gt; 5) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScrapYard/PartTracker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+          <folding>
+            <marker date="1554410732274" expanded="false" signature="6:85" ph="..." />
+            <marker date="1554410732274" expanded="true" signature="106:15093" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="137:15091" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="173:253" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="287:549" ph="{...}" />
+            <marker date="1554410732274" expanded="false" signature="559:790" ph="Fields" />
+            <marker date="1554410732274" expanded="false" signature="800:1076" ph="Properties" />
+            <marker date="1554410732274" expanded="true" signature="853:1046" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="879:1036" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="1086:7112" ph="Public Methods" />
+            <marker date="1554410732274" expanded="true" signature="1118:4825" ph="Add" />
+            <marker date="1554410732274" expanded="true" signature="1138:1306" ph="/// Takes a list of parts and registers it as a build ... " />
+            <marker date="1554410732274" expanded="true" signature="1360:2940" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="1403:1455" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="1725:2584" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="2141:2381" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="2257:2363" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="2402:2570" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="2635:2859" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="2749:2845" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="2950:3140" ph="/// Takes a list of part ConfigNodes and registers it as a build ... " />
+            <marker date="1554410732274" expanded="true" signature="3204:4802" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="3247:3299" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="3583:4445" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="4003:4242" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="4118:4224" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="4263:4431" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="4496:4720" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="4610:4706" ph="{...}" />
+            <marker date="1554410732274" expanded="false" signature="4835:7078" ph="Get" />
+            <marker date="1554410732274" expanded="true" signature="4855:5117" ph="/// Gets the number of builds for a part ... " />
+            <marker date="1554410732274" expanded="true" signature="5198:5401" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="5241:5295" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="5411:5673" ph="/// Gets the number of builds for a part ... " />
+            <marker date="1554410732274" expanded="true" signature="5760:5963" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="5803:5857" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="5973:6228" ph="/// Gets the number of uses of a part ... " />
+            <marker date="1554410732274" expanded="true" signature="6307:6508" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="6350:6404" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="6518:6769" ph="/// Gets the number of uses of a part ... " />
+            <marker date="1554410732274" expanded="true" signature="6854:7055" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="6897:6951" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="7122:11460" ph="Private Methods" />
+            <marker date="1554410732274" expanded="true" signature="7154:7427" ph="/// Adds a single use to the useTracker. Automatically determines type ... " />
+            <marker date="1554410732274" expanded="true" signature="7486:8364" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="7636:7729" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="7746:7927" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="7977:8061" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="8078:8154" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="8374:8740" ph="/// Adds a single build to the buildTracker ... " />
+            <marker date="1554410732274" expanded="true" signature="8822:9815" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="8972:9071" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="9088:9271" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="9355:9441" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="9517:9595" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="9825:10030" ph="/// Gets the number of builds for an InventoryPart ... " />
+            <marker date="1554410732274" expanded="true" signature="10096:10627" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="10244:10595" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="10288:10581" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="10637:10836" ph="/// Gets the number of uses for an InventoryPart ... " />
+            <marker date="1554410732274" expanded="true" signature="10900:11425" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="11048:11393" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="11092:11379" ph="{...}" />
+            <marker date="1554410732274" expanded="false" signature="11470:15085" ph="State" />
+            <marker date="1554410732274" expanded="true" signature="11515:15060" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="11541:12929" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="11779:12879" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="12954:15050" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="13098:13162" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="13238:15036" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="13280:14763" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="13789:13977" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="14006:14716" ph="{...}" />
+            <marker date="1554410732274" expanded="true" signature="14804:15018" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScrapYard/API/APIManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="421" column="23" selection-start-line="421" selection-start-column="23" selection-end-line="421" selection-end-column="23" />
+          <folding>
+            <marker date="1547758866000" expanded="false" signature="6:175" ph="..." />
+            <marker date="1547758866000" expanded="true" signature="196:25290" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="203:587" ph="/// This is the remote-side of the API, where all calls through the wrapper funnel through. ... " />
+            <marker date="1547758866000" expanded="true" signature="622:25288" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="702:786" ph="/// A static instance of the APIManager ... " />
+            <marker date="1547758866000" expanded="true" signature="828:926" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="854:916" ph="{...}" />
+            <marker date="1547758866000" expanded="false" signature="936:13269" ph="Inventory Manipulation" />
+            <marker date="1547758866000" expanded="true" signature="975:1318" ph="/// Takes a List of Parts and returns the Parts that are present in the inventory.  ... " />
+            <marker date="1547758866000" expanded="true" signature="1421:2135" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="1498:1567" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="1836:2093" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="2000:2079" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="2145:2483" ph="/// Takes a List of part ConfigNodes and returns the ConfigNodes that are present in the inventory.  ... " />
+            <marker date="1547758866000" expanded="true" signature="2604:3342" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="2681:2756" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="3043:3300" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="3207:3286" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="3352:3615" ph="/// Adds a list of parts to the Inventory ... " />
+            <marker date="1547758866000" expanded="true" signature="3710:4178" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="3787:3839" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="3880:4168" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="3996:4090" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="4188:4451" ph="/// Adds a list of parts to the Inventory ... " />
+            <marker date="1547758866000" expanded="true" signature="4552:5026" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="4629:4681" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="4728:5016" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="4844:4938" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="5036:5392" ph="/// Adds a single part to the inventory, increments the recovery tracker if specified ... " />
+            <marker date="1547758866000" expanded="true" signature="5477:5883" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="5554:5612" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="5713:5795" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="5893:6249" ph="/// Adds a single part to the inventory, increments the recovery tracker if specified ... " />
+            <marker date="1547758866000" expanded="true" signature="6340:6746" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="6417:6475" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="6576:6658" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="6756:7084" ph="/// Removes a single part from the inventory. ... " />
+            <marker date="1547758866000" expanded="true" signature="7169:7523" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="7246:7304" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="7533:7861" ph="/// Removes a single part from the inventory. ... " />
+            <marker date="1547758866000" expanded="true" signature="7952:8306" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="8029:8087" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="8316:8535" ph="/// Sells/Discards the list of parts out of the inventory ... " />
+            <marker date="1547758866000" expanded="true" signature="8598:8831" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="8675:8729" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="8841:9060" ph="/// Sells/Discards the list of parts out of the inventory ... " />
+            <marker date="1547758866000" expanded="true" signature="9129:9362" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="9206:9260" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="9372:9713" ph="/// Finds an InventoryPart for a given part ... " />
+            <marker date="1547758866000" expanded="true" signature="9798:10146" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="9875:9932" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="10156:10497" ph="/// Finds an InventoryPart for a given part ... " />
+            <marker date="1547758866000" expanded="true" signature="10588:10936" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="10665:10722" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="10946:11193" ph="/// Finds an InventoryPart for a given ID ... " />
+            <marker date="1547758866000" expanded="true" signature="11251:11594" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="11328:11385" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="11451:11559" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="11604:11772" ph="/// Gets all parts in the inventory as a list of ConfigNodes ... " />
+            <marker date="1547758866000" expanded="true" signature="11828:12389" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="11905:11962" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="11979:12251" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="12145:12237" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="12284:12354" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="12399:12610" ph="/// Refreshes a part node to be fresh and not from the inventory ... " />
+            <marker date="1547758866000" expanded="true" signature="12668:13227" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="12745:12803" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="12820:13088" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="13121:13191" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="13279:17057" ph="Vessel Processing" />
+            <marker date="1547758866000" expanded="true" signature="13313:13557" ph="/// Removes inventory parts, refunds funds, marks it as tracked ... " />
+            <marker date="1547758866000" expanded="true" signature="13622:14452" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="13693:13750" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="13889:14038" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="14160:14218" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="14462:14706" ph="/// Removes inventory parts, refunds funds, marks it as tracked ... " />
+            <marker date="1547758866000" expanded="true" signature="14781:15638" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="14852:14909" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="15071:15220" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="15342:15400" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="15648:15803" ph="/// Records a build in the part tracker ... " />
+            <marker date="1547758866000" expanded="true" signature="15866:15946" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="15956:16117" ph="/// Records a build in the part tracker ... " />
+            <marker date="1547758866000" expanded="true" signature="16186:16266" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="16276:16535" ph="/// Sets whether a vessel is tracked or not ... " />
+            <marker date="1547758866000" expanded="true" signature="16604:17020" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="16668:16984" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="16816:16970" ph="{...}" />
+            <marker date="1547758866000" expanded="false" signature="17067:21683" ph="Part Tracker" />
+            <marker date="1547758866000" expanded="true" signature="17096:17373" ph="/// Gets the number of builds for a part ... " />
+            <marker date="1547758866000" expanded="true" signature="17435:17551" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="17561:17860" ph="/// Gets the number of builds for a part ... " />
+            <marker date="1547758866000" expanded="true" signature="17932:18052" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="18062:18331" ph="/// Gets the number of uses of a part ... " />
+            <marker date="1547758866000" expanded="true" signature="18391:18505" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="18515:18806" ph="/// Gets the number of uses of a part ... " />
+            <marker date="1547758866000" expanded="true" signature="18876:18994" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="19004:19299" ph="/// Gets the unique ID for the current part. ... " />
+            <marker date="1547758866000" expanded="true" signature="19347:19425" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="19435:19730" ph="/// Gets the unique ID for the current part. ... " />
+            <marker date="1547758866000" expanded="true" signature="19784:19862" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="19872:20182" ph="/// Gets the number of times a part has been recovered.  ... " />
+            <marker date="1547758866000" expanded="true" signature="20230:20323" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="20333:20642" ph="/// Gets the number of times a part has been recovered. ... " />
+            <marker date="1547758866000" expanded="true" signature="20696:20789" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="20799:21030" ph="/// Checks if the part is pulled from the inventory or is new ... " />
+            <marker date="1547758866000" expanded="true" signature="21086:21217" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="21227:21458" ph="/// Checks if the part is pulled from the inventory or is new ... " />
+            <marker date="1547758866000" expanded="true" signature="21520:21651" ph="{...}" />
+            <marker date="1547758866000" expanded="false" signature="21693:24478" ph="Settings" />
+            <marker date="1547758866000" expanded="true" signature="21745:21920" ph="/// Gets the list of blacklisted parts. This is readonly. ... " />
+            <marker date="1547758866000" expanded="true" signature="21982:22105" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="22115:22268" ph="/// Gets the value of the AutoApplyInventory setting ... " />
+            <marker date="1547758866000" expanded="true" signature="22320:22407" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="22417:22571" ph="/// Sets the value of the AutoApplyInventory setting ... " />
+            <marker date="1547758866000" expanded="true" signature="22633:22721" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="22765:22945" ph="/// Gets the value of the ModEnabled save-specific setting for the current save ... " />
+            <marker date="1547758866000" expanded="true" signature="22989:23072" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="23082:23264" ph="/// Gets the value of the UseInventory save-specific setting for the current save ... " />
+            <marker date="1547758866000" expanded="true" signature="23310:23411" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="23421:23601" ph="/// Gets the value of the UseTracker save-specific setting for the current save ... " />
+            <marker date="1547758866000" expanded="true" signature="23645:23744" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="23754:23937" ph="/// Gets the value of the OverrideFunds save-specific setting for the current save ... " />
+            <marker date="1547758866000" expanded="true" signature="23984:24086" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="24096:24295" ph="/// The percentage of funds returned for selling parts when OverrideFunds is active, for this save ... " />
+            <marker date="1547758866000" expanded="true" signature="24344:24449" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="24555:24883" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="24581:24776" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="24807:24873" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="24950:25282" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="24976:25174" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="25192:25272" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScrapYard/Events/EventListeners.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="117" column="23" lean-forward="true" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
+          <folding>
+            <marker date="1547758866000" expanded="false" signature="6:140" ph="..." />
+            <marker date="1547758866000" expanded="true" signature="161:10314" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="195:10312" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="384:1327" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="454:1317" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="1370:2383" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="2463:3442" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="2602:3346" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="2679:3332" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="2853:3314" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="2998:3292" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="3514:4517" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="3585:3637" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="3757:4507" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="3799:4355" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="4162:4333" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="4395:4489" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="4579:5148" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="4650:4702" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="4765:4855" ph="/* If vessel not processed, then take parts ... */" />
+            <marker date="1547758866000" expanded="true" signature="4946:4998" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="5193:5980" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="5264:5316" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="5479:5970" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="6046:6201" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="6088:6191" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="6263:6317" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="6368:6553" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="6443:6543" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="6604:6789" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="6679:6779" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="6867:7353" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="7061:7270" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="7144:7256" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="7396:7525" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="7628:10306" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="7662:10188" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="7730:7832" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="7853:10174" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="7989:8061" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="8275:8700" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="8420:8678" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="8861:9701" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="9097:9254" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="9726:10111" ph="{...}" />
+            <marker date="1547758866000" expanded="true" signature="10205:10296" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
