@@ -75,14 +75,12 @@ namespace ScrapYard
                 }
             }
 
-            if (!KRASHWrapper.simulationActive())
+            //Increment the build tracker
+            foreach (var partPair in uniqueParts)
             {
-                //Increment the build tracker
-                foreach (var partPair in uniqueParts)
-                {
-                    addBuild(partPair.Key, partPair.Value);
-                }
+                addBuild(partPair.Key, partPair.Value);
             }
+
             ScrapYardEvents.OnSYTrackerUpdated.Fire(uniqueParts.Keys);
         }
 
@@ -119,15 +117,11 @@ namespace ScrapYard
                 }
             }
 
-            if (!KRASHWrapper.simulationActive())
+            //Increment the build tracker
+            foreach (var partPair in uniqueParts)
             {
-                //Increment the build tracker
-                foreach (var partPair in uniqueParts)
-                {
-                    addBuild(partPair.Key, partPair.Value);
-                }
+                addBuild(partPair.Key, partPair.Value);
             }
-
             ScrapYardEvents.OnSYTrackerUpdated.Fire(uniqueParts.Keys);
         }
         #endregion Add
@@ -241,7 +235,7 @@ namespace ScrapYard
             InventoryPart found = _buildTracker.Keys.FirstOrDefault(ip => ip.IsSameAs(source, _strictness));
             if (found != null)
             {
-                    _buildTracker[found].buildsTotal++; //increment it
+                _buildTracker[found].buildsTotal++; //increment it
             }
             else
             {
