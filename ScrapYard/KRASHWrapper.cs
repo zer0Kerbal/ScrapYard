@@ -7,7 +7,7 @@ using System.Reflection;
 using UnityEngine;
 
 
-namespace KRASH
+namespace ScrapYard
 {
 	public class KRASHWrapper
 	{

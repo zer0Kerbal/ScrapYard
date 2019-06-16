@@ -48,7 +48,7 @@ namespace ScrapYard
         /// <param name="parts">The vessel as a list of parts</param>
         public void AddBuild(IEnumerable<Part> parts)
         {
-            if (!TrackerEnabled)
+            if (!TrackerEnabled || KRASHWrapper.simulationActive())
             {
                 return;
             }
