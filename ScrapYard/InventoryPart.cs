@@ -371,7 +371,7 @@ namespace ScrapYard
             {
                 return false;
             }
-
+            ConfigNode[] forbiddenModules = GameDatabase.Instance.GetConfigNodes("SY_FORBIDDEN_MODULE");
             if (part.Modules?.Count > 0)
             {
                 //we can't just copy saved modules over, since that won't work for going back to default
@@ -391,7 +391,7 @@ namespace ScrapYard
                             copyNode = new ConfigNode("MODULE");
                             defaultModule?.Save(copyNode);
                         }
-                        if (copyNode.HasData)
+                        if (copyNode.HasData && IsNotForbidden(forbiddenModules, modName))
                         {
                             if (modName == "TweakScale")
                             {
@@ -426,6 +426,16 @@ namespace ScrapYard
             }
             //fire part changed event
             ScrapYardEvents.OnSYInventoryAppliedToPart.Fire(part);
+            return true;
+        }
+
+        private bool IsNotForbidden(ConfigNode[] forbiddenModules, string modName)
+        {
+            for (int i = 0; i < forbiddenModules.Length; i++)
+            {
+                ConfigNode cn = forbiddenModules.ElementAt(i);
+                if (cn.GetValue("name") == modName) return false;
+            }
             return true;
         }
 
