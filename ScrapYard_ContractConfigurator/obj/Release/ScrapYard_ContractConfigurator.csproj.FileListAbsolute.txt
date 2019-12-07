@@ -1,0 +1,5 @@
+/home/martin/OneDrive/Documents/GitHub/ScrapYard/ScrapYard_ContractConfigurator/bin/Release/ScrapYard_ContractConfigurator.dll
+/home/martin/OneDrive/Documents/GitHub/ScrapYard/ScrapYard_ContractConfigurator/bin/Release/ScrapYard_ContractConfigurator.pdb
+/home/martin/OneDrive/Documents/GitHub/ScrapYard/ScrapYard_ContractConfigurator/obj/Release/ScrapYard_ContractConfigurator.csprojAssemblyReference.cache
+/home/martin/OneDrive/Documents/GitHub/ScrapYard/ScrapYard_ContractConfigurator/obj/Release/ScrapYard_ContractConfigurator.dll
+/home/martin/OneDrive/Documents/GitHub/ScrapYard/ScrapYard_ContractConfigurator/obj/Release/ScrapYard_ContractConfigurator.pdb

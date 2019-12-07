@@ -1,0 +1,5 @@
+/home/martin/OneDrive/Documents/GitHub/ScrapYard/ScrapYard/bin/Release/ScrapYard.dll
+/home/martin/OneDrive/Documents/GitHub/ScrapYard/ScrapYard/bin/Release/ScrapYard.pdb
+/home/martin/OneDrive/Documents/GitHub/ScrapYard/ScrapYard/obj/Release/ScrapYard.csprojAssemblyReference.cache
+/home/martin/OneDrive/Documents/GitHub/ScrapYard/ScrapYard/obj/Release/ScrapYard.dll
+/home/martin/OneDrive/Documents/GitHub/ScrapYard/ScrapYard/obj/Release/ScrapYard.pdb
