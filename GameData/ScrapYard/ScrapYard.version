@@ -4,8 +4,8 @@
     "VERSION":
     {
         "MAJOR":1,
-        "MINOR":1,
-        "PATCH":3,
+        "MINOR":2,
+        "PATCH":0,
         "BUILD":0
     },
     "GITHUB":
@@ -17,13 +17,19 @@
     "KSP_VERSION_MIN":
 	{
         "MAJOR":1,
-        "MINOR":7,
+        "MINOR":8,
         "PATCH":0
      },
     "KSP_VERSION_MAX":
 	{
         "MAJOR":1,
-        "MINOR":7,
+        "MINOR":8,
         "PATCH":99
      }
+
+    "INSTALL_LOC":
+    {
+        "NAME":         "ScrapYard",
+        "DIRECTORY":    "ScrapYard"
+    }
 }
