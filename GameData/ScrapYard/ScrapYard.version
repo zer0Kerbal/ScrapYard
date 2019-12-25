@@ -1,6 +1,6 @@
 {
     "NAME":"ScrapYard",
-    "URL":"https://github.com/severedsolo/ScrapYard/blob/master/GameData/ScrapYard/ScrapYard.version",
+    "URL":"https://raw.githubusercontent.com/severedsolo/ScrapYard/master/GameData/ScrapYard/ScrapYard.version",
     "VERSION":
     {
         "MAJOR":2,
