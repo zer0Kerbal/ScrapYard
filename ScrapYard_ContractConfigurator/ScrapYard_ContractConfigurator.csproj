@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ScrapYard_ContractConfigurator</RootNamespace>
     <AssemblyName>ScrapYard_ContractConfigurator</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -23,7 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
@@ -31,51 +31,34 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+    <Reference Include="C:\Games\KSP 1.9\GameData\MagiCore\Plugins\MagiCore.dll">
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>bin\Debug\Assembly-CSharp.dll</HintPath>
+    <Reference Include="$(DevDir19)\GameData\ScrapYard\Plugins\ScrapYard.dll" />
+    <Reference Include="C:\Games\KSP 1.9\GameData\ContractConfigurator\ContractConfigurator.dll">
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\KSP_x64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    <Reference Include="C:\Games\KSP 1.9\KSP_x64_Data\Managed\Assembly-CSharp.dll">
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>bin\Debug\Assembly-CSharp-firstpass.dll</HintPath>
+    <Reference Include="C:\Games\KSP 1.9\KSP_x64_Data\Managed\Assembly-CSharp-firstpass.dll">
+      <Private>False</Private>
     </Reference>
-    <Reference Include="ContractConfigurator">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program - ModDev\GameData\ContractConfigurator\ContractConfigurator.dll</HintPath>
+    <Reference Include="C:\Games\KSP 1.9\KSP_x64_Data\Managed\UnityEngine.dll">
+      <Private>False</Private>
     </Reference>
-    <Reference Include="ContractConfigurator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>bin\Debug\ContractConfigurator.dll</HintPath>
-    </Reference>
-    <Reference Include="MagiCore, Version=1.3.2.3, Culture=neutral, PublicKeyToken=null">
-      <HintPath>bin\Debug\MagiCore.dll</HintPath>
+    <Reference Include="C:\Games\KSP 1.9\KSP_x64_Data\Managed\UnityEngine.CoreModule.dll">
+      <Private>False</Private>
     </Reference>
     <Reference Include="ScrapYard">
-      <HintPath>..\ScrapYard\bin\Debug\ScrapYard.dll</HintPath>
+      <HintPath>..\GameData\ScrapYard\Plugins\ScrapYard.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>bin\Debug\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>bin\Debug\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>bin\Debug\UnityEngine.UI.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BehaviourFactory\ChangeInventoryPartsFactory.cs" />
@@ -83,6 +66,29 @@
     <Compile Include="Helpers\ChangeInventoryPartsHandler.cs" />
     <Compile Include="Helpers\IntermediateInventoryPart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyVersion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssemblyVersion.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Version.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Version.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\AssemblyVersion.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AssemblyVersion.cs</LastGenOutput>
+    </Content>
+    <Content Include="Properties\Version.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Version.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

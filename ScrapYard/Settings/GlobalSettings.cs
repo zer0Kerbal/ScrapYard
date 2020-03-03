@@ -69,7 +69,7 @@ namespace ScrapYard
             {
                 Logging.DebugLog("Initializing GlobalSettings");
                 _scrapYardPath = KSPUtil.ApplicationRootPath + "/GameData/ScrapYard";
-                _settingsPath = _scrapYardPath + "/PluginData/ScrapYard.cfg";
+                _settingsPath = _scrapYardPath + "/Plugins/PluginData/ScrapYard.cfg";
                 _initialized = true;
             }
         }
@@ -132,7 +132,7 @@ namespace ScrapYard
         public void SaveSettings()
         {
             Initialize();
-            Directory.CreateDirectory(_scrapYardPath + "/PluginData");
+            Directory.CreateDirectory(_scrapYardPath + "/Plugins/PluginData");
             ConfigNode settingsNode = ConfigNode.CreateConfigFromObject(this);
 
             settingsNode.AddNode(ScrapYard.Instance.InstanceSelectorUI.SavePosition(true));

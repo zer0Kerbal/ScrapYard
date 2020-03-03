@@ -1,6 +1,21 @@
+*.psd
+.markdown
+Debug/
+Release/
 
 *.dll
 *.cache
 *.pdb
-.vs/ScrapYard/v15/.suo
+.vs/
+obj/
+bin/
+
+ScrapYard_ContractConfigurator\obj\
+ScrapYard_ContractConfigurator\bin\
+
 *.zip
+*.rar
+*.7z
+ScrapYard_ContractConfigurator/obj/Release/ScrapYard_ContractConfigurator.csproj.FileListAbsolute.txt
+shields.md
+images.txt

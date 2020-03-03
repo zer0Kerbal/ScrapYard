@@ -139,7 +139,7 @@ namespace ScrapYard
                     null,
                     null,
                     (ApplicationLauncher.AppScenes.SPH | ApplicationLauncher.AppScenes.VAB),
-                    GameDatabase.Instance.GetTexture("ScrapYard/icon", false));
+                    GameDatabase.Instance.GetTexture("ScrapYard/Plugins/icon", false));
             }
         }
 
