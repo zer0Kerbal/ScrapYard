@@ -9,10 +9,10 @@
 [SHIELD:license]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/license.json
 
 # Before you Contribute (thank you!) Please Read:
-> [LICENSE][MOD:license] ![SHIELD:license]  
+> [LICENSE][MOD:license] ![SHIELD:license] ![LOGO:mit]  
 > [CONTRIBUTING][MOD:contributing]
 
-## All submissions become subject to this repository's [LICENSE][MOD:license] ![SHIELD:license] 
+## All submissions become subject to this repository's [LICENSE][MOD:license] ![SHIELD:license] ![LOGO:mit] 
 ## Under GitHub Terms of Service (ToS), all pull requests is licensed under the target repository license, unless a different agreement is previously reached.
 ### All push requests are licensed under: ![SHIELD:license]
 
@@ -35,6 +35,8 @@ Start reading our code and you'll get the hang of it. We optimize for readabilit
     -So that we can consistently serve images from the CDN, always use image_path or image_tag when referring to images. Never prepend "/images/" when using image_path or image_tag.
     - Also for the CDN, always use cwd-relative paths rather than root-relative paths in image URLs in any CSS. So instead of url('/images/blah.gif'), use url('../images/blah.gif').
     - button textures, sounds, and settings save files should all be under /KSP/GameData/%MOD%/Plugins/PluginData/ 
+
+***
 
 # Read this page before reporting a bug.
 ### *If you ignore these directions, your report may be ignored.*
