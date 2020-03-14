@@ -43,28 +43,28 @@
     <TransformOutOfDateOnly>false</TransformOutOfDateOnly>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C:\Games\KSP 1.9\GameData\MagiCore\Plugins\MagiCore.dll">
+    <Reference Include="$(DevDir19)\GameData\MagiCore\Plugins\MagiCore.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="C:\Games\KSP 1.9\KSP_x64_Data\Managed\Assembly-CSharp.dll">
+    <Reference Include="$(DevDir19)\KSP_x64_Data\Managed\Assembly-CSharp.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="C:\Games\KSP 1.9\KSP_x64_Data\Managed\Assembly-CSharp-firstpass.dll">
+    <Reference Include="$(DevDir19)\KSP_x64_Data\Managed\Assembly-CSharp-firstpass.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="C:\Games\KSP 1.9\KSP_x64_Data\Managed\UnityEngine.AnimationModule.dll">
+    <Reference Include="$(DevDir19)\KSP_x64_Data\Managed\UnityEngine.AnimationModule.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="C:\Games\KSP 1.9\KSP_x64_Data\Managed\UnityEngine.CoreModule.dll">
+    <Reference Include="$(DevDir19)\KSP_x64_Data\Managed\UnityEngine.CoreModule.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="C:\Games\KSP 1.9\KSP_x64_Data\Managed\UnityEngine.IMGUIModule.dll">
+    <Reference Include="$(DevDir19)\KSP_x64_Data\Managed\UnityEngine.IMGUIModule.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="C:\Games\KSP 1.9\KSP_x64_Data\Managed\UnityEngine.InputLegacyModule.dll">
+    <Reference Include="$(DevDir19)\KSP_x64_Data\Managed\UnityEngine.InputLegacyModule.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="C:\Games\KSP 1.9\KSP_x64_Data\Managed\UnityEngine.UI.dll">
+    <Reference Include="$(DevDir19)\KSP_x64_Data\Managed\UnityEngine.UI.dll">
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
