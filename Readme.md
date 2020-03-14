@@ -113,10 +113,6 @@ Mods using ScrapYard:
 [Oh Scrap!](https://forum.kerbalspaceprogram.com/index.php?/topic/160854-*) by [@severedsolo][LINK:severedsolo]
 ***
 [![][image:rel-github]][MOD:rel-github] [![][image:rel-spacedock]][MOD:rel-spacedock] [![][image:rel-curseforge]][MOD:rel-curseforge]  
-  
-<a href="https://github.com/zer0Kerbal/ScrapYard/releases/latest" target="_blank"><img src="https://i.imgur.com/RE4Ppr9.png"/></a>
-<a href="https://spacedock.info/mod/1746" target="_blank"><img src="https://i.imgur.com/m0a7tn2.png"/></a>
-<a href="https://www.curseforge.com/kerbal/ksp-mods/scrapyard" target="_blank"><img src="https://i.postimg.cc/RZNyB5vP/Download-On-Curse.png"/></a>
 
 *Be Kind: Lithobrake, not jakebrake! Keep your Module Manager up to date*
 
@@ -134,6 +130,7 @@ Mods using ScrapYard:
 [MOD:changelog]:    https://github.com/zer0Kerbal/ScrapYard/Changelog.cfg
 
 [KSP:website]: http://kerbalspaceprogram.com/
+[LOGO:mit]: https://i.postimg.cc/bvjfsMP5/MIT-17x17.png
 
 [MOD:rel-github]: https://github.com/zer0Kerbal/ScrapYard/releases/latest
 [MOD:rel-spacedock]: http://spacedock.info/mod/15
@@ -148,13 +145,12 @@ Mods using ScrapYard:
 [shield:mod]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/mod.json
 [shield:ksp]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/ksp.json
 [shield:license]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/license.json
-[LOGO:mit]: https://i.postimg.cc/bvjfsMP5/MIT-17x17.png
 [shield:kspavc]:     https://img.shields.io/badge/KSP-AVC--supported-brightgreen.svg?style=plastic
 [shield:spacedock]:  https://img.shields.io/badge/SpaceDock-listed-blue.svg?style=plastic
 [shield:ckan]:       https://img.shields.io/badge/CKAN-Indexed-blue.svg?style=plastic
-[shield:github]:     https://img.shields.io/github-Indexed-blue.svg?style=plastic
+[shield:github]:     https://img.shields.io/badge/Github-Indexed-blue.svg?style=plastic
 [shield:curseforge]: https://img.shields.io/badge/CurseForge-listed-blue.svg?style=plastic
-[shield:avcvalid]:    https://github.com/zer0Kerbal/ScarpYard/workflows/Validate%20AVC%20.version%20files/badge.svg
+[shield:avcvalid]:    ![Validate AVC .version files](https://github.com/zer0Kerbal/ScrapYard/workflows/Validate%20AVC%20.version%20files/badge.svg)
 [shield:support-sr]: https://img.shields.io/github/v/release/linuxgurugamer/StageRecovery?include_prereleases?style=plastic
 [shield:support-kct]: https://img.shields.io/github/v/release/linuxgurugamer/KCT?include_prereleases?style=plastic
 
