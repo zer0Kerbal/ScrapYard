@@ -39,7 +39,7 @@ Start reading our code and you'll get the hang of it. We optimize for readabilit
 # Read this page before reporting a bug.
 ### *If you ignore these directions, your report may be ignored.*
 
-<center>[![How to get support][image:get-support]][thread:getsupport]</center>
+[![How to get support][image:get-support]][thread:getsupport]
 
 ### Before you report
 
