@@ -1,3 +1,10 @@
+<!-- 
+CONTRIBUTING.md
+ScrapYard
+created: 2020 03 13
+updated: 2020 03 14
+-->
+
 [MOD:license]:      https://github.com/zer0Kerbal/ScrapYard/blob/master/LICENSE
 [MOD:contributing]: https://github.com/zer0Kerbal/ScrapYard/blob/master/.github/CONTRIBUTING.md
 [MOD:issues]:       https://github.com/zer0Kerbal/ScrapYard/issues
@@ -83,7 +90,11 @@ Bug reports and feature requests should be filled on the [issue tracker][MOD:iss
   - sometimes including a .craft file or save file is beneficial
 If you don't have enough information to file a bug report, you may ask questions on the [forum thread][MOD:forum]. **Do not send private messages about bugs unless you believe the bug is an exploitable security issue.**
 
-
+<!-- 
+this file is licensed:
+GPLv2 2020
+zer0Kerbal
+-->
 
 [LOGO:mit]:    https://i.postimg.cc/bvjfsMP5/MIT-17x17.png
 [LOGO:gplv3]: https://i.postimg.cc/90kCDs7K/gplv3-48x17.png
