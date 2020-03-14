@@ -1,7 +1,15 @@
- # ScrapYard: The Common Part Inventory
-![Mod Version](https://img.shields.io/github/v/release/zer0Kerbal/ScrapYard?include_prereleases?style=plastic)
-![KSP version](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/ksp.json?style=plastic) ![KSP-AVC](https://img.shields.io/badge/KSP-AVC--supported-brightgreen.svg?style=plastic) ![License MIT](https://img.shields.io/badge/license-MIT-red?style=plastic)  
-![Spacedock](https://img.shields.io/badge/SpaceDock-listed-blue.svg?style=plastic) ![CKAN](https://img.shields.io/badge/CKAN-Indexed-blue.svg?style=plastic) ![Github](https://img.shields.io/badge/Github-Indexed-blue.svg?style=plastic) ![Curseforge](https://img.shields.io/badge/CurseForge-listed-blue.svg?style=plastic)
+<!-- Readme.md v1.0.0.2
+ScrapYard {SYD}
+created: 01 Oct 19
+updated: 2020 03 12 -->
+<!-- # KerbGuise Experimental engineering (KGEx)
+#### Brings you: -->
+<!-- Download on SpaceDock or Github or Curseforge. Also available on CKAN. -->
+
+# ScrapYard: The Common Part Inventory
+![Mod Version][SHIELD:mod:latest] 
+![KSP version](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/ksp.json?style=plastic) ![KSP-AVC](https://img.shields.io/badge/KSP-AVC--supported-brightgreen.svg?style=plastic) ![License MIT][SHIELD:license]  
+![SHIELD:spacedock] ![SHIELD:]ckan ![SHIELD:github] ![SHIELD:curseforge] 
 
 
 Preamble by severedsolo: 
@@ -90,3 +98,24 @@ Mods using ScrapYard:
 [Kerbal Construction Time](https://forum.kerbalspaceprogram.com/index.php?/topic/62900-*) by @linuxgurugamer / @magico13
 
 [Oh Scrap!](https://forum.kerbalspaceprogram.com/index.php?/topic/160854-*) by @severedsolo 
+
+###### v2.0.1.0 original: 01 Oct 2019 zed'K | updated: 14 Mar 2020 zed'K
+
+[MOD:license]:       https://github.com/zer0Kerbal/ScrapYard/blob/master/LICENSE
+[MOD:contributing]:  https://github.com/zer0Kerbal/ScrapYard/blob/master/.github/CONTRIBUTING.md
+[MOD:issues]:        https://github.com/zer0Kerbal/ScrapYard/issues
+[MOD:wiki]:          https://github.com/zer0Kerbal/ScrapYard/
+[MOD:known]:         https://github.com/zer0Kerbal/ScrapYard/wiki/Known-Issues
+[MOD:forum]:         https://forum.kerbalspaceprogram.com/index.php?/topic/178641-*
+[SHIELD:mod:latest]: https://img.shields.io/github/v/release/zer0Kerbal/ScrapYard?include_prereleases?style=plastic
+[SHIELD:mod]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/mod.json
+[SHIELD:ksp]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/ksp.json
+[SHIELD:license]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/license.json
+[SHIELD:spacedock]:  https://img.shields.io/badge/SpaceDock-listed-blue.svg?style=plastic
+[SHIELD:ckan]:       https://img.shields.io/badge/CKAN-Indexed-blue.svg?style=plastic
+[SHIELD:github]:     https://img.shields.io/badge/Github-Indexed-blue.svg?style=plastic
+[SHIELD:curseforge]: https://img.shields.io/badge/CurseForge-listed-blue.svg?style=plastic
+
+<!--
+this file: GPLv2
+zer0Kerbal-->
