@@ -2,5 +2,6 @@
   "schemaVersion": 1,
   "label": "ScrapYard",
   "message": "2.1.0.0",
-  "color": "orange"
+  "color": "orange",
+  "style": "plastic"
 }
