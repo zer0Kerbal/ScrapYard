@@ -38,10 +38,10 @@ As of writing, ScrapYard does the following:
 *See [ChangeLog][MOD:changelog] for full details of mod changes*
 
 ### Dependencies
-- [x] [![Kerbal Space Program][SHIELD:ksp]][[KSP:website]
+- [x] Kerbal Space Program: [![][SHIELD:ksp]][KSP:website]
 
 - [Kerbal Space Program](https://kerbalspaceprogram.com) v1.9.1, ***may*** work on earlier versions (YMMV)
-- [x] [![Module Manager][shield:support-mm]][thread:mm]
+- [x] Module Manager: [![][shield:support-mm]][thread:mm]
 - [ModuleManager](https://forum.kerbalspaceprogram.com/index.php?/topic/50533-**)
 - [Magicore](http://forum.kerbalspaceprogram.com/index.php?/topic/97033-*)
 
