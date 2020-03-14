@@ -12,8 +12,8 @@
 > [LICENSE][MOD:license] ![SHIELD:license] ![LOGO:mit]  
 > [CONTRIBUTING][MOD:contributing]
 
-## All submissions become subject to this repository's [LICENSE][MOD:license] ![SHIELD:license] ![LOGO:mit] 
-## Under GitHub Terms of Service (ToS), all pull requests is licensed under the target repository license, unless a different agreement is previously reached.
+### All submissions become subject to this repository's [LICENSE][MOD:license] ![SHIELD:license] ![LOGO:mit] 
+##### Under GitHub Terms of Service (ToS), all pull requests are licensed under the target repository license, unless a different agreement is previously reached.
 ### All push requests are licensed under: ![SHIELD:license]
 
 # Submitting changes
