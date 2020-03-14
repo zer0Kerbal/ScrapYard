@@ -8,8 +8,8 @@ updated: 2020 03 12 -->
 
 # ScrapYard: The Common Part Inventory
 ![Mod Version][SHIELD:mod:latest] 
-!KSP version][SHIELD:ksp] ![SHIELD:kspavc] ![License MIT][SHIELD:license] [SHIELD:mit] 
-![SHIELD:spacedock] ![SHIELD:ckan] ![SHIELD:github] ![SHIELD:curseforge] 
+![KSP version][SHIELD:ksp] ![KSP-AVC][SHIELD:kspavc] ![License MIT][SHIELD:license] ![SHIELD:mit] 
+![SpaceDock][SHIELD:spacedock] ![CKAN][SHIELD:ckan] ![GitHub][SHIELD:github] ![Curseforge][SHIELD:curseforge] 
 
 
 Preamble by severedsolo: 
@@ -111,7 +111,7 @@ Mods using ScrapYard:
 [SHIELD:mod]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/mod.json
 [SHIELD:ksp]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/ksp.json
 [SHIELD:license]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/license.json
-[SHIELD.mit]:        https://i.postimg.cc/bvjfsMP5/MIT-17x17.png
+[LOGO:mit]: https://i.postimg.cc/bvjfsMP5/MIT-17x17.png
 [SHIELD:kspavc]:     https://img.shields.io/badge/KSP-AVC--supported-brightgreen.svg?style=plastic
 [SHIELD:spacedock]:  https://img.shields.io/badge/SpaceDock-listed-blue.svg?style=plastic
 [SHIELD:ckan]:       https://img.shields.io/badge/CKAN-Indexed-blue.svg?style=plastic
