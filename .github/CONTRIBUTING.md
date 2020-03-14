@@ -51,7 +51,7 @@ Make sure you're encountering a bug and not just an intended aspect of the mod.
 See if the problem occurs if you uninstall this mod, and also see if it occurs when this is the *only* mod installed. 
 
 **Are you up-to-date?**  
-Only the latest version of ![SHIELD:mod] and the latest version of ![SHILED:ksp] are supported. Make sure both are completely up-to-date before filing a report.
+Only the latest version of ![SHIELD:mod] and the latest version of ![SHIELD:ksp] are supported. Make sure both are completely up-to-date before filing a report.
 
 ### Filing a report
 
