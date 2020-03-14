@@ -35,7 +35,7 @@ As of writing, ScrapYard does the following:
 - Use CKAN
 
 ### Changelog Summary
-*See [ChangeLog][MOD:changelog] for full details of mod changes*
+*See [![ChangeLog][image:changelog]][MOD:changelog] for full details of mod changes*
 
 ### Dependencies
 - [x] Kerbal Space Program: [![][shield:ksp]][KSP:website] ***may*** work on other versions (YMMV)
@@ -82,7 +82,7 @@ https://img.shields.io/github/v/release/linuxgurugamer/OhScrap?include_prereleas
 ![hero shot][IMG:hero:0]  
 ![hero shot][IMG:hero:1]  
 
-Source: [GitHub][MOD:github:repo]
+Source: [![GitHub][image:source]][MOD:github:repo]
 
 ScrapYard is licensed ![MIT][MOD:license] ![LOGO:mit]  
 
@@ -132,7 +132,8 @@ Mods using ScrapYard:
 [MOD:changelog]:    https://github.com/zer0Kerbal/ScrapYard/Changelog.cfg
 
 [KSP:website]: http://kerbalspaceprogram.com/
-[LOGO:mit]: https://i.postimg.cc/bvjfsMP5/MIT-17x17.png
+[LOGO:mit]:    https://i.postimg.cc/bvjfsMP5/MIT-17x17.png
+[LOGO:gplv3]: https://i.postimg.cc/90kCDs7K/gplv3-48x17.png
 
 [MOD:rel-github]: https://github.com/zer0Kerbal/ScrapYard/releases/latest
 [MOD:rel-spacedock]: http://spacedock.info/mod/15
@@ -143,6 +144,14 @@ Mods using ScrapYard:
 [image:rel-spacedock]: https://i.imgur.com/m0a7tn2.png
 [image:rel-curseforge]: https://i.postimg.cc/RZNyB5vP/Download-On-Curse.png
 [image:get-support]:    https://i.postimg.cc/vHP6zmrw/image.png
+
+[image:rel-ckan]:    https://i.postimg.cc/x8XSVg4R/sj507JC.png
+[image:changelog]: https://i.postimg.cc/qM9p4V0C/changelog.png
+[image:source]:      https://i.postimg.cc/tJ8GqW0H/source.png
+
+[image:rel-github-sm]:      https://i.postimg.cc/1XXy5yfD/github.png
+[image:rel-spacedock-sm]: https://i.postimg.cc/DZ22Hrhj/spacedock.png
+[image:rel-curseforge-sm]: https://i.postimg.cc/ZRVTSWKT/UVVt0OP.png
   
 [shield:mod:latest]: https://img.shields.io/github/v/release/zer0Kerbal/ScrapYard?include_prereleases?style=plastic
 [shield:mod]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/mod.json
