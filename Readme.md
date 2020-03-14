@@ -1,4 +1,4 @@
-<!-- Readme.md v1.0.0.2
+<!-- Readme.md v1.0.1.0
 ScrapYard {SYD}
 created: 01 Oct 19
 updated: 2020 03 12 -->
@@ -8,9 +8,9 @@ updated: 2020 03 12 -->
 
 # ScrapYard: The Common Part Inventory
 ![Mod Version][SHIELD:mod:latest] 
-![KSP version][SHIELD:ksp] ![KSP-AVC][SHIELD:kspavc] ![License MIT][SHIELD:license] ![SHIELD:mit] 
+![KSP version][SHIELD:ksp] ![KSP-AVC][SHIELD:kspavc] ![License MIT][SHIELD:license] ![LOGO:mit]  
 ![SpaceDock][SHIELD:spacedock] ![CKAN][SHIELD:ckan] ![GitHub][SHIELD:github] ![Curseforge][SHIELD:curseforge] 
-
+![Validate AVC .version files][SHIELD:avcvalid]  
 
 Preamble by severedsolo: 
 > So you may have heard that @magico13 is giving up modding KSP. I've got the honour of taking over support for ScrapYard, because it makes sense as I have my own mod that depends on it (Oh Scrap!). I want to take this opportunity to thank magico13 for all his hard work and contributions to the community over the years, as I know that my own KSP experience would be much poorer without his mods. Anyway, enough from me.
@@ -56,22 +56,16 @@ As of writing, ScrapYard does the following:
 - [RealChutes  (maybe)]()
 
 
-[SpaceDock](https://spacedock.info/mod/1746/ScrapYard)
+[SpaceDock][MOD:spacedock]
 
 [GitHub](https://github.com/zer0Kerbal/ScrapYard/releases/latest/)
 
- 
-![](https://i.imgur.com/DVDdgU1.png)
- 
-![](https://i.imgur.com/y0vd6WS.png)
+![hero shot][IMG:hero:0]  
+![hero shot][IMG:hero:1]  
 
-Source: [GitHub](https://github.com/zer0Kerbal/ScrapYard/)
+Source: [GitHub][MOD:github:repo]
 
-ScrapYard is licensed MIT
-
-Support me on Patreon!
-
-![](https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif)
+ScrapYard is licensed ![MIT][MOD:license] ![LOGO:mit]  
 
  
 
@@ -95,18 +89,23 @@ There are numerous reasons you might want to integrate with ScrapYard (with a ha
 
 Mods using ScrapYard:
 
-[Kerbal Construction Time](https://forum.kerbalspaceprogram.com/index.php?/topic/62900-*) by @linuxgurugamer / @magico13
+[Kerbal Construction Time](https://forum.kerbalspaceprogram.com/index.php?/topic/62900-*) by [@linuxgurugamer][LINK:linuxgurugamer] / [@magico13][LINK:magico13]
 
 [Oh Scrap!](https://forum.kerbalspaceprogram.com/index.php?/topic/160854-*) by @severedsolo 
 
 ###### v2.0.1.0 original: 01 Oct 2019 zed'K | updated: 14 Mar 2020 zed'K
 
-[MOD:license]:       https://github.com/zer0Kerbal/ScrapYard/blob/master/LICENSE
-[MOD:contributing]:  https://github.com/zer0Kerbal/ScrapYard/blob/master/.github/CONTRIBUTING.md
-[MOD:issues]:        https://github.com/zer0Kerbal/ScrapYard/issues
-[MOD:wiki]:          https://github.com/zer0Kerbal/ScrapYard/
-[MOD:known]:         https://github.com/zer0Kerbal/ScrapYard/wiki/Known-Issues
-[MOD:forum]:         https://forum.kerbalspaceprogram.com/index.php?/topic/178641-*
+[MOD:license]:         https://github.com/zer0Kerbal/ScrapYard/blob/master/LICENSE
+[MOD:contributing]:    https://github.com/zer0Kerbal/ScrapYard/blob/master/.github/CONTRIBUTING.md
+[MOD:issues]:          https://github.com/zer0Kerbal/ScrapYard/issues
+[MOD:wiki]:            https://github.com/zer0Kerbal/ScrapYard/
+[MOD:known]:           https://github.com/zer0Kerbal/ScrapYard/wiki/Known-Issues
+[MOD:forum]:           https://forum.kerbalspaceprogram.com/index.php?/topic/178641-*[Link:]:
+[MOD:spacedock]:       https://spacedock.info/mod/1746
+[MOD:github:repo]:     https://github.com/zer0Kerbal/ScrapYard/
+[MOD:github:releases]: https://github.com/zer0Kerbal/ScrapYard/releases/latest
+[MOD:curseforge]:    
+
 [SHIELD:mod:latest]: https://img.shields.io/github/v/release/zer0Kerbal/ScrapYard?include_prereleases?style=plastic
 [SHIELD:mod]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/mod.json
 [SHIELD:ksp]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/ksp.json
@@ -117,6 +116,15 @@ Mods using ScrapYard:
 [SHIELD:ckan]:       https://img.shields.io/badge/CKAN-Indexed-blue.svg?style=plastic
 [SHIELD:github]:     https://img.shields.io/badge/Github-Indexed-blue.svg?style=plastic
 [SHIELD:curseforge]: https://img.shields.io/badge/CurseForge-listed-blue.svg?style=plastic
+[SHIELD:avcvalid]:    https://github.com/zer0Kerbal/ScarpYard/workflows/Validate%20AVC%20.version%20files/badge.svg?style=plastic
+
+[LINK:magico13]:       https://forum.kerbalspaceprogram.com/index.php?/profile/73338-magico13/
+[LINK:severedsolo]:    https://forum.kerbalspaceprogram.com/index.php?/profile/80345-severedsolo/
+[LINK:zer0Kerbal]:     https://forum.kerbalspaceprogram.com/index.php?/profile/190933-zer0kerbal/
+[LINK:linuxgurugamer]: https://forum.kerbalspaceprogram.com/index.php?/profile/129964-linuxgurugamer/
+
+[IMG:hero:0]: https://i.imgur.com/DVDdgU1.png
+[IMG:hero:1]: https://i.imgur.com/y0vd6WS.png)
 
 <!--
 this file: GPLv2
