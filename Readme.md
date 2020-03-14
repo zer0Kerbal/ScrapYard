@@ -112,7 +112,7 @@ Mods using ScrapYard:
 
 [Oh Scrap!](https://forum.kerbalspaceprogram.com/index.php?/topic/160854-*) by [@severedsolo][LINK:severedsolo]
 ***
-[![][image:rel-github]] [ICONS:rel-github] [![][image:rel-spacedock]] [ICONS:rel-spacedock] [![][image:rel-curseforge]] [ICONS:rel-curseforge]  
+[![][image:rel-github]][MOD:rel-github] [![][image:rel-spacedock]][MOD:rel-spacedock] [![][image:rel-curseforge]][MOD:rel-curseforge]  
   
 <a href="https://github.com/zer0Kerbal/ScrapYard/releases/latest" target="_blank"><img src="https://i.imgur.com/RE4Ppr9.png"/></a>
 <a href="https://spacedock.info/mod/1746" target="_blank"><img src="https://i.imgur.com/m0a7tn2.png"/></a>
