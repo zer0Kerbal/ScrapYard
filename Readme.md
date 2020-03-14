@@ -112,7 +112,8 @@ Mods using ScrapYard:
 
 [Oh Scrap!](https://forum.kerbalspaceprogram.com/index.php?/topic/160854-*) by [@severedsolo][LINK:severedsolo]
 ***
-
+[![][image:rel-github]][ICONS:rel-github] [![][image:rel-spacedock]][ICONS:rel-spacedock] [![][image:rel-curseforge]][ICONS:rel-curseforge]  
+  
 <a href="https://github.com/zer0Kerbal/ScrapYard/releases/latest" target="_blank"><img src="https://i.imgur.com/RE4Ppr9.png"/></a>
 <a href="https://spacedock.info/mod/1746" target="_blank"><img src="https://i.imgur.com/m0a7tn2.png"/></a>
 <a href="https://www.curseforge.com/kerbal/ksp-mods/scrapyard" target="_blank"><img src="https://i.postimg.cc/RZNyB5vP/Download-On-Curse.png"/></a>
@@ -121,19 +122,27 @@ Mods using ScrapYard:
 
 ###### v2.0.1.0 original: 01 Oct 2019 zed'K | updated: 14 Mar 2020 zed'K
 
-[MOD:license]:         https://github.com/zer0Kerbal/ScrapYard/blob/master/LICENSE
-[MOD:contributing]:    https://github.com/zer0Kerbal/ScrapYard/blob/master/.github/CONTRIBUTING.md
-[MOD:issues]:          https://github.com/zer0Kerbal/ScrapYard/issues
-[MOD:wiki]:            https://github.com/zer0Kerbal/ScrapYard/
-[MOD:known]:           https://github.com/zer0Kerbal/ScrapYard/wiki/Known-Issues
-[MOD:forum]:           https://forum.kerbalspaceprogram.com/index.php?/topic/178641-*
-[MOD:spacedock]:       https://spacedock.info/mod/1746
-[MOD:github:repo]:     https://github.com/zer0Kerbal/ScrapYard/
-[MOD:github:releases]: https://github.com/zer0Kerbal/ScrapYard/releases/latest
-[MOD:curseforge]:      https://www.curseforge.com/kerbal/ksp-mods/scrapyard
-[MOD:changelog]:       https://github.com/zer0Kerbal/ScrapYard/Changelog.cfg
+[MOD:license]:      https://github.com/zer0Kerbal/ScrapYard/blob/master/LICENSE
+[MOD:contributing]: https://github.com/zer0Kerbal/ScrapYard/blob/master/.github/CONTRIBUTING.md
+[MOD:issues]:       https://github.com/zer0Kerbal/ScrapYard/issues
+[MOD:wiki]:         https://github.com/zer0Kerbal/ScrapYard/
+[MOD:known]:        https://github.com/zer0Kerbal/ScrapYard/wiki/Known-Issues
+[MOD:forum]:        https://forum.kerbalspaceprogram.com/index.php?/topic/178641-*
+[MOD:spacedock]:    https://spacedock.info/mod/1746
+[MOD:github:repo]:  https://github.com/zer0Kerbal/ScrapYard/
+[MOD:curseforge]:   https://www.curseforge.com/kerbal/ksp-mods/scrapyard
+[MOD:changelog]:    https://github.com/zer0Kerbal/ScrapYard/Changelog.cfg
 
 [KSP:website]: http://kerbalspaceprogram.com/
+
+[MOD:rel-github]: https://github.com/zer0Kerbal/ScrapYard/releases/latest
+[MOD:rel-spacedock]: http://spacedock.info/mod/15
+[MOD:rel-curseforge]: http://
+[MOD:rel-ckan]: http://forum.kerbalspaceprogram.com/index.php?/topic/90246-*
+
+[image:rel-github]:    https://i.imgur.com/RE4Ppr9.png
+[image:rel-spacedock]:  https://i.imgur.com/m0a7tn2.png
+[image:rel-curseforge]: https://i.postimg.cc/RZNyB5vP/Download-On-Curse.png
 
 [shield:mod:latest]: https://img.shields.io/github/v/release/zer0Kerbal/ScrapYard?include_prereleases?style=plastic
 [shield:mod]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/mod.json
