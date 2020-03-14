@@ -1,26 +1,26 @@
 <!-- Readme.md v1.0.1.0
-ScrapYard {SYD}
+ScrapYard (SYD)
 created: 01 Oct 19
 updated: 2020 03 12 -->
 <!-- # KerbGuise Experimental engineering (KGEx)
 #### Brings you: -->
 <!-- Download on SpaceDock or Github or Curseforge. Also available on CKAN. -->
 
-# ScrapYard: The Common Part Inventory
+# ScrapYard (SYD)
+## The Common Part Inventory
 ![Mod Version][shield:mod:latest] 
 ![KSP version][shield:ksp] ![KSP-AVC][shield:kspavc] ![License MIT][shield:license] ![LOGO:mit]  
 ![SpaceDock][shield:spacedock] ![CKAN][shield:ckan] ![GitHub][shield:github] ![Curseforge][shield:curseforge]  
 ![Validate AVC .version files][shield:avcvalid]  
 
-Preamble by [@severedsolo][LINK:severedsolo]: 
+### Preamble by [@severedsolo][LINK:severedsolo]: 
 > So you may have heard that @magico13 is giving up modding KSP. I've got the honour of taking over support for ScrapYard, because it makes sense as I have my own mod that depends on it (Oh Scrap!). I want to take this opportunity to thank magico13 for all his hard work and contributions to the community over the years, as I know that my own KSP experience would be much poorer without his mods. Anyway, enough from me.
 
-The bit you are actually interested in
+### The bit you are actually interested in
 
 ScrapYard is a mod that provides a part inventory that can be shared between multiple mods. Parts are added to the inventory when you recover a vessel and are removed from the inventory when you build a new vessel. If you have ever played with Kerbal Construction Time, it's a significantly improved version of the part inventory that KCT had, that is also able to be used by other mods.
 
-As of writing, ScrapYard does the following:
-
+### As of writing, ScrapYard does the following:
 - Parts are added to the inventory automatically upon vessel recovery
 - Parts are applied in the editor (not automatically like with KCT)
 - Parts are then pulled from the inventory on build (mods can change when this happens)
@@ -30,25 +30,24 @@ As of writing, ScrapYard does the following:
 - The number of times an individual part is recovered is tracked, perfect for consumption by part failure mods
 - (WIP) Funds can be overridden so that using parts from the inventory do not contribute to the cost of the vessel. You do still need to have the full amount of funds (for now).
 - ContractConfigurator support for adding or removing parts from the inventory as part of contracts
-
-#### Installation Directions:
+***
+### Installation Directions:
 - Use CKAN
 
 ### Changelog Summary
-*See [![ChangeLog][image:changelog]][MOD:changelog] for full details of mod changes*
-
+*See [ChangeLog][MOD:changelog] for full details of mod changes*
+***
 ### Dependencies
 - [x] Kerbal Space Program: [![][shield:ksp]][KSP:website] ***may*** work on other versions (YMMV)
-- [x] Module Manager        [![][shield:support-mm]][thread:mm]  
-- [x] Magiccore             [![][shield:support-mc]][thread:mc]  
+- [x] Module Manager [![][shield:support-mm]][thread:mm]  
+- [x] Magiccore [![][shield:support-mc]][thread:mc]  
 
-### Recomends
-- [x] OhScrap!        [![][shield:support-ohs]][thread:ohs]  
+### Recomends  
+- [x] OhScrap! [![][shield:support-ohs]][thread:ohs]  
 - [x] KerbalChangeLog [![][shield:support-kcl]][thread:kcl]  
 
-
 ### Suggests
-- [x] StageRecovery            [![][shield:support-sr]][thread:sr]  
+- [x] StageRecovery [![][shield:support-sr]][thread:sr]  
 - [x] Kerbal Construction Time [![][shield:support-kct]][thread:kct]  
 
 ### Supports
@@ -82,7 +81,7 @@ https://img.shields.io/github/v/release/linuxgurugamer/OhScrap?include_prereleas
 ![hero shot][IMG:hero:0]  
 ![hero shot][IMG:hero:1]  
 
-Source: [![GitHub][image:source]][MOD:github:repo]
+Source: [GitHub][MOD:github:repo]
 
 ScrapYard is licensed ![MIT][MOD:license] ![LOGO:mit]  
 
@@ -90,13 +89,10 @@ ScrapYard is licensed ![MIT][MOD:license] ![LOGO:mit]
 
 Special thanks to [@SiriusSam][LINK:siriussame] for the original idea of creating a separate part inventory way back in 2014 and for the name, and to [@enneract][LINK:enneract] for discussion and design help.
 
-As a player, why do I want this?
-
+### As a player, why do I want this?
 If you are using Kerbal Construction Time, all balance is assumed you have this mod. It will substantially reduce build times for both vessels that use parts from the inventory and new vessels that use frequently used parts due to the part tracker. As of writing, no other mods are using this framework, but when they do this mod may be required. And this mod can be used by itself with the override funds option to play with a very different play style.
 
-As a mod developer, why do I want this?
-
-
+### As a mod developer, why do I want this?
 There are numerous reasons you might want to integrate with ScrapYard (with a hard dependency or a soft dependency, both options are offered), here are just a few that I can think of off the top of my head:
 
 - ScrapYard provides a way to uniquely track a part during its entire life cycle, from the moment it is placed in the editor until the time it is removed from the game. That includes surviving through multiple recoveries and launches. I imagine part failure mods might get the most use out of this, but surprise me!
@@ -105,12 +101,9 @@ There are numerous reasons you might want to integrate with ScrapYard (with a ha
 - Get information about how often parts are used on a total used and number of builds basis. This is referred to as either the Part Tracker or the "Like" Part Tracker since it just tracks parts that are like each other (same name).
 - Many more that I can’t think of off the top of my head
 
-
 Mods using ScrapYard:
-
-[Kerbal Construction Time](https://forum.kerbalspaceprogram.com/index.php?/topic/62900-*) by [@linuxgurugamer][LINK:linuxgurugamer] / [@magico13][LINK:magico13]
-
-[Oh Scrap!](https://forum.kerbalspaceprogram.com/index.php?/topic/160854-*) by [@severedsolo][LINK:severedsolo]
+- ![thread:kct[shields:support-kct] (https://forum.kerbalspaceprogram.com/index.php?/topic/62900-*) by [@linuxgurugamer][LINK:linuxgurugamer] / [@magico13][LINK:magico13]
+- [Oh Scrap!](https://forum.kerbalspaceprogram.com/index.php?/topic/160854-*) by [@severedsolo][LINK:severedsolo]
 ***
 [![How to get support][image:get-support]][thread:getsupport]
 
@@ -160,7 +153,7 @@ Mods using ScrapYard:
 [shield:kspavc]:     https://img.shields.io/badge/KSP-AVC--supported-brightgreen.svg?style=plastic
 [shield:spacedock]:  https://img.shields.io/badge/SpaceDock-listed-blue.svg?style=plastic
 [shield:ckan]:       https://img.shields.io/badge/CKAN-Indexed-blue.svg?style=plastic
-[shield:github]:     https://img.shields.io/badge/Github-Indexed-blue.svg?style=plastic
+[shield:github]:     https://img.shields.io/badge/Github-Indexed-blue.svg?style=plastic&logo=github
 [shield:curseforge]: https://img.shields.io/badge/CurseForge-listed-blue.svg?style=plastic
 [shield:avcvalid]:    https://github.com/zer0Kerbal/ScrapYard/workflows/Validate%20AVC%20.version%20files/badge.svg
 [shield:support-sr]: https://img.shields.io/github/v/release/linuxgurugamer/StageRecovery?include_prereleases?style=plastic
