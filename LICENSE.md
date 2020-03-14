@@ -4,6 +4,9 @@ Copyright 2016 Magico13
 Copyright 2018 Martin Joy (aka severedsolo)
 Copyright © 2020  zer0Kerbal
 
+[LICENSE](https://github.com/zer0Kerbal/ScrapYard/blob/master/LICENSE)  
+[CONTRIBUTING](https://github.com/zer0Kerbal/ScrapYard/blob/master/.github/CONTRIBUTING.md)
+
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
