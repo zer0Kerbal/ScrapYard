@@ -7,10 +7,10 @@ updated: 2020 03 12 -->
 <!-- Download on SpaceDock or Github or Curseforge. Also available on CKAN. -->
 
 # ScrapYard: The Common Part Inventory
-![Mod Version][SHIELD:mod:latest] 
-![KSP version][SHIELD:ksp] ![KSP-AVC][SHIELD:kspavc] ![License MIT][SHIELD:license] ![LOGO:mit]  
-![SpaceDock][SHIELD:spacedock] ![CKAN][SHIELD:ckan] ![GitHub][SHIELD:github] ![Curseforge][SHIELD:curseforge]  
-![Validate AVC .version files][SHIELD:avcvalid]  
+![Mod Version][shield:mod:latest] 
+![KSP version][shield:ksp] ![KSP-AVC][shield:kspavc] ![License MIT][shield:license] ![LOGO:mit]  
+![SpaceDock][shield:spacedock] ![CKAN][shield:ckan] ![GitHub][shield:github] ![Curseforge][shield:curseforge]  
+![Validate AVC .version files][shield:avcvalid]  
 
 Preamble by [@severedsolo][LINK:severedsolo]: 
 > So you may have heard that @magico13 is giving up modding KSP. I've got the honour of taking over support for ScrapYard, because it makes sense as I have my own mod that depends on it (Oh Scrap!). I want to take this opportunity to thank magico13 for all his hard work and contributions to the community over the years, as I know that my own KSP experience would be much poorer without his mods. Anyway, enough from me.
@@ -38,20 +38,21 @@ As of writing, ScrapYard does the following:
 *See [ChangeLog][MOD:changelog] for full details of mod changes*
 
 ### Dependencies
-- [x] Kerbal Space Program: [![][SHIELD:ksp]][KSP:website]***may*** work on other versions (YMMV)
-- [x] [![][shield:support-mm]][thread:mm]: Module Manager  
-- [x] [![][shield:support-mc]][thread:mc]: Magiccore  
-- [Magicore](http://forum.kerbalspaceprogram.com/index.php?/topic/97033-*)
+- [x] Kerbal Space Program: [![][shield:ksp]][KSP:website] ***may*** work on other versions (YMMV)
+- [x] Module Manager        [![][shield:support-mm]][thread:mm]  
+- [x] Magiccore             [![][shield:support-mc]][thread:mc]  
 
 ### Recomends
-- [OhScrap!](https://forum.kerbalspaceprogram.com/index.php?/topic/160854-*)
-- [KerbalChangeLog](https://forum.kerbalspaceprogram.com/index.php?/topic/179207-*)
+- [x] OhScrap!        [![][shield:support-ohs]][thread:ohs]  
+- [x] KerbalChangeLog [![][shield:support-kcl]][thread:kcl]  
+
 
 ### Suggests
-- [Kerbal Construction Time]()
-- [StageRecovery](https://forum.kerbalspaceprogram.com/index.php?/topic/179306-**)
+- [x] StageRecovery            [![][shield:support-sr]][thread:sr]  
+- [x] Kerbal Construction Time [![][shield:support-kct]][thread:kct]  
 
 ### Supports
+https://img.shields.io/github/v/release/linuxgurugamer/OhScrap?include_prereleases?style=plastic
 - [KRASH](http://forum.kerbalspaceprogram.com/index.php?/topic/133082-*)
 - [TweakScale](https://forum.kerbalspaceprogram.com/index.php?/topic/179030-*)
 - [RemoteTech]()
@@ -134,21 +135,26 @@ Mods using ScrapYard:
 
 [KSP:website]: http://kerbalspaceprogram.com/
 
-[SHIELD:mod:latest]: https://img.shields.io/github/v/release/zer0Kerbal/ScrapYard?include_prereleases?style=plastic
-[SHIELD:mod]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/mod.json
-[SHIELD:ksp]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/ksp.json
-[SHIELD:license]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/license.json
+[shield:mod:latest]: https://img.shields.io/github/v/release/zer0Kerbal/ScrapYard?include_prereleases?style=plastic
+[shield:mod]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/mod.json
+[shield:ksp]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/ksp.json
+[shield:license]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/license.json
 [LOGO:mit]: https://i.postimg.cc/bvjfsMP5/MIT-17x17.png
-[SHIELD:kspavc]:     https://img.shields.io/badge/KSP-AVC--supported-brightgreen.svg?style=plastic
-[SHIELD:spacedock]:  https://img.shields.io/badge/SpaceDock-listed-blue.svg?style=plastic
-[SHIELD:ckan]:       https://img.shields.io/badge/CKAN-Indexed-blue.svg?style=plastic
-[SHIELD:github]:     https://img.shields.io/github-Indexed-blue.svg?style=plastic
-[SHIELD:curseforge]: https://img.shields.io/badge/CurseForge-listed-blue.svg?style=plastic
-[SHIELD:avcvalid]:    https://github.com/zer0Kerbal/ScarpYard/workflows/Validate%20AVC%20.version%20files/badge.svg
-
+[shield:kspavc]:     https://img.shields.io/badge/KSP-AVC--supported-brightgreen.svg?style=plastic
+[shield:spacedock]:  https://img.shields.io/badge/SpaceDock-listed-blue.svg?style=plastic
+[shield:ckan]:       https://img.shields.io/badge/CKAN-Indexed-blue.svg?style=plastic
+[shield:github]:     https://img.shields.io/github-Indexed-blue.svg?style=plastic
+[shield:curseforge]: https://img.shields.io/badge/CurseForge-listed-blue.svg?style=plastic
+[shield:avcvalid]:    https://github.com/zer0Kerbal/ScarpYard/workflows/Validate%20AVC%20.version%20files/badge.svg
+[shield:support-sr]: https://img.shields.io/github/v/release/linuxgurugamer/StageRecovery?include_prereleases?style=plastic
+[shield:support-kct]: https://img.shields.io/github/v/release/linuxgurugamer/KCT?include_prereleases?style=plastic
 
 [thread:mm]: http://forum.kerbalspaceprogram.com/index.php?/topic/50533-*
 [thread:mc]: https://forum.kerbalspaceprogram.com/index.php?/topic/178484-*
+[thread:ohs]: https://forum.kerbalspaceprogram.com/index.php?/topic/160854-*
+[thread:kcl]: https://forum.kerbalspaceprogram.com/index.php?/topic/179207-*
+[thread:sr]: https://forum.kerbalspaceprogram.com/index.php?/topic/179306-*
+[thread:kct]: https://forum.kerbalspaceprogram.com/index.php?/topic/182877-*
 
 [thread:arp]: http://forum.kerbalspaceprogram.com/index.php?/topic/54876-*
 [thread:warp]: http://forum.kerbalspaceprogram.com/index.php?/topic/90899-*
@@ -168,6 +174,9 @@ Mods using ScrapYard:
 
 [shield:support-mm]: http://img.shields.io/github/v/release/sarbian/ModuleManager?include_prereleases?style=plastic
 [shield:support-mc]: http://img.shields.io/github/v/release/linuxgurugamer/MagiCore?include_prereleases?style=plastic
+[shield:support-ohs]: https://img.shields.io/github/v/release/zer0Kerbal/OhScrap?include_prereleases?style=plastic
+[shield:support-kcl]: https://img.shields.io/github/v/release/BenjaminCronin/KerbalChangeLog?include_prereleases?style=plastic
+
 [shield:support-arp]: http://img.shields.io/github/v/release/TriggerAu/AlternateResourcePanel?include_prereleases?style=plastic
 [shield:support-warp]: http://img.shields.io/github/v/release/BobPalmer/WarpDrive/releases/latest?include_prereleases?style=plastic
 [shield:support-crp]: http://img.shields.io/github/v/release/BobPalmer/CommunityResourcePack/releases/latest?include_prereleases?style=plastic
