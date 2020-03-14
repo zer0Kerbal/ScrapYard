@@ -150,7 +150,7 @@ Mods using ScrapYard:
 [shield:ckan]:       https://img.shields.io/badge/CKAN-Indexed-blue.svg?style=plastic
 [shield:github]:     https://img.shields.io/badge/Github-Indexed-blue.svg?style=plastic
 [shield:curseforge]: https://img.shields.io/badge/CurseForge-listed-blue.svg?style=plastic
-[shield:avcvalid]:    ![Validate AVC .version files](https://github.com/zer0Kerbal/ScrapYard/workflows/Validate%20AVC%20.version%20files/badge.svg)
+[shield:avcvalid]:    https://github.com/zer0Kerbal/ScrapYard/workflows/Validate%20AVC%20.version%20files/badge.svg
 [shield:support-sr]: https://img.shields.io/github/v/release/linuxgurugamer/StageRecovery?include_prereleases?style=plastic
 [shield:support-kct]: https://img.shields.io/github/v/release/linuxgurugamer/KCT?include_prereleases?style=plastic
 
