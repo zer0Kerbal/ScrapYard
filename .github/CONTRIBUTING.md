@@ -1,3 +1,6 @@
+[LICENSE](https://github.com/zer0Kerbal/ScrapYard/blob/master/LICENSE)  
+[CONTRIBUTING](https://github.com/zer0Kerbal/ScrapYard/blob/master/.github/CONTRIBUTING.md)
+
 # Submitting changes
 
 Please send a GitHub Pull Request to ScrapYard with a clear list of what you've done (read more about pull requests). When you send a pull request, we will love you forever if you include RSpec examples. We can always use more test coverage. Please follow our coding conventions (below) and make sure all of your commits are atomic (one feature per commit).
