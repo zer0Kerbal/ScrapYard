@@ -38,8 +38,10 @@ As of writing, ScrapYard does the following:
 *See [ChangeLog][MOD:changelog] for full details of mod changes*
 
 ### Dependencies
+- [x] [![Kerbal Space Program][SHIELD:ksp]][[KSP:website]
+
 - [Kerbal Space Program](https://kerbalspaceprogram.com) v1.9.1, ***may*** work on earlier versions (YMMV)
-  * [x] [![][shield:support-mm]][thread:mm]
+- [x] [![Module Manager][shield:support-mm]][thread:mm]
 - [ModuleManager](https://forum.kerbalspaceprogram.com/index.php?/topic/50533-**)
 - [Magicore](http://forum.kerbalspaceprogram.com/index.php?/topic/97033-*)
 
@@ -131,6 +133,8 @@ Mods using ScrapYard:
 [MOD:github:releases]: https://github.com/zer0Kerbal/ScrapYard/releases/latest
 [MOD:curseforge]:      https://www.curseforge.com/kerbal/ksp-mods/scrapyard
 [MOD:changelog]:       https://github.com/zer0Kerbal/ScrapYard/Changelog.cfg
+
+[KSP:website]: http://kerbalspaceprogram.com/
 
 [SHIELD:mod:latest]: https://img.shields.io/github/v/release/zer0Kerbal/ScrapYard?include_prereleases?style=plastic
 [SHIELD:mod]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/mod.json
