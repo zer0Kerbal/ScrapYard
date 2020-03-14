@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "label": "License"
+  "label": "License",
   "message": "GPLv2",
   "color": "red",
   "style": "plastic"
