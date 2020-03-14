@@ -112,8 +112,8 @@ Mods using ScrapYard:
 
 [Oh Scrap!](https://forum.kerbalspaceprogram.com/index.php?/topic/160854-*) by [@severedsolo][LINK:severedsolo]
 ***
-[![How to get support][image:get-support]][thread:getsupport]
-
+[![][image:get-support]][thread:getsupport]
+How to get support
 [![][image:rel-github]][MOD:rel-github] [![][image:rel-spacedock]][MOD:rel-spacedock] [![][image:rel-curseforge]][MOD:rel-curseforge]  
 
 *Be Kind: Lithobrake, not jakebrake! Keep your Module Manager up to date*
