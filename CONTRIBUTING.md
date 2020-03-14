@@ -38,10 +38,11 @@ Start reading our code and you'll get the hang of it. We optimize for readabilit
 
 ***
 
+*click the red box because it is also a link*
+[![How to get support][image:get-support]][thread:getsupport]
+
 # Read this page before reporting a bug.
 ### *If you ignore these directions, your report may be ignored.*
-
-[![How to get support][image:get-support]][thread:getsupport]
 
 ### Before you report
 
@@ -82,7 +83,13 @@ Bug reports and feature requests should be filled on the [issue tracker][MOD:iss
   - sometimes including a .craft file or save file is beneficial
 If you don't have enough information to file a bug report, you may ask questions on the [forum thread][MOD:forum]. **Do not send private messages about bugs unless you believe the bug is an exploitable security issue.**
 
-[image:get-support]:    https://i.postimg.cc/vHP6zmrw/image.png
+
+
+[LOGO:mit]:    https://i.postimg.cc/bvjfsMP5/MIT-17x17.png
+[LOGO:gplv3]: https://i.postimg.cc/90kCDs7K/gplv3-48x17.png
+
+[image:get-support]: https://i.postimg.cc/vHP6zmrw/image.png
+
 [thread:getsupport]: https://forum.kerbalspaceprogram.com/index.php?/topic/83212-*
 
-[LINK:zer0Kerbal]:     https://forum.kerbalspaceprogram.com/index.php?/profile/190933-zer0kerbal/
+[LINK:zer0Kerbal]: https://forum.kerbalspaceprogram.com/index.php?/profile/190933-zer0kerbal/
