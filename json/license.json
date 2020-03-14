@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "label": "License",
-  "message": "GPLv2",
+  "message": "MIT",
   "color": "red",
   "style": "plastic"
 }
