@@ -12,9 +12,9 @@
 > [LICENSE][MOD:license] ![SHIELD:license] ![LOGO:mit]  
 > [CONTRIBUTING][MOD:contributing]
 
-### All submissions become subject to this repository's [LICENSE][MOD:license] ![SHIELD:license] ![LOGO:mit] 
+### All submissions become subject to this repository's [LICENSE][MOD:license] ![SHIELD:license] ![LOGO:mit]  
 ##### Under GitHub Terms of Service (ToS), all pull requests are licensed under the target repository license, unless a different agreement is previously reached.
-### All push requests are licensed under: ![SHIELD:license]
+### All push requests are licensed under: ![SHIELD:license] ![LOGO:mit]  
 
 # Submitting changes
 Please send a GitHub Pull Request to ScrapYard with a clear list of what you've done (read more about pull requests). When you send a pull request, we will love you forever if you include RSpec examples. We can always use more test coverage. Please follow our coding conventions (below) and make sure all of your commits are atomic (one feature per commit).
