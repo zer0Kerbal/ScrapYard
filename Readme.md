@@ -35,16 +35,17 @@ As of writing, ScrapYard does the following:
 - [KerbalChangeLog](https://forum.kerbalspaceprogram.com/index.php?/topic/179207-*)
 
 ### Suggests
-- Kerbal Construction Time
+- [Kerbal Construction Time]()
 - [StageRecovery](https://forum.kerbalspaceprogram.com/index.php?/topic/179306-**)
 
 ### Supports
 - [KRASH](http://forum.kerbalspaceprogram.com/index.php?/topic/133082-*)
 - [TweakScale](https://forum.kerbalspaceprogram.com/index.php?/topic/179030-*)
-- 
+- [RemoteTech]()
+- [FAR]()
 
 ### Conflicts
-- [RP-1 (maybe)](https://github.com/KSP-RO/RP-0)
+- [RealChutes  (maybe)]()
 
 
 [SpaceDock](https://spacedock.info/mod/1746/ScrapYard)
