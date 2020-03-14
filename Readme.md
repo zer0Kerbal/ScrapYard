@@ -139,11 +139,11 @@ How to get support
 [MOD:rel-curseforge]: http://
 [MOD:rel-ckan]: http://forum.kerbalspaceprogram.com/index.php?/topic/90246-*
 
-[image:rel-github]:    https://i.imgur.com/RE4Ppr9.png
-[image:rel-spacedock]:  https://i.imgur.com/m0a7tn2.png
+[image:rel-github]:       https://i.imgur.com/RE4Ppr9.png
+[image:rel-spacedock]: https://i.imgur.com/m0a7tn2.png
 [image:rel-curseforge]: https://i.postimg.cc/RZNyB5vP/Download-On-Curse.png
-[image:get-support]: https://postimg.cc/D8XZfnpx
-
+[image:get-support]:    https://i.postimg.cc/vHP6zmrw/image.png
+  
 [shield:mod:latest]: https://img.shields.io/github/v/release/zer0Kerbal/ScrapYard?include_prereleases?style=plastic
 [shield:mod]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/mod.json
 [shield:ksp]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/ksp.json
