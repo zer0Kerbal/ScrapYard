@@ -140,7 +140,7 @@ Mods using ScrapYard:
 [SHIELD:kspavc]:     https://img.shields.io/badge/KSP-AVC--supported-brightgreen.svg?style=plastic
 [SHIELD:spacedock]:  https://img.shields.io/badge/SpaceDock-listed-blue.svg?style=plastic
 [SHIELD:ckan]:       https://img.shields.io/badge/CKAN-Indexed-blue.svg?style=plastic
-[SHIELD:github]:     https://img.shields.io/badge/Github-Indexed-blue.svg?style=plastic
+[SHIELD:github]:     https://img.shields.io/github-Indexed-blue.svg?style=plastic
 [SHIELD:curseforge]: https://img.shields.io/badge/CurseForge-listed-blue.svg?style=plastic
 [SHIELD:avcvalid]:    https://github.com/zer0Kerbal/ScarpYard/workflows/Validate%20AVC%20.version%20files/badge.svg
 
@@ -162,10 +162,10 @@ Mods using ScrapYard:
 [thread:bm]: http://forum.kerbalspaceprogram.com/index.php?/topic/48629-*
 [thread:df]: http://forum.kerbalspaceprogram.com/index.php?/topic/112328-*
 
-[shield:support-mm]: http://img.shields.io/badge/github/v/release/sarbian/ModuleManager?include_prereleases?style=plastic
-[shield:support-arp]: http://img.shields.io/badge/github/v/release/TriggerAu/AlternateResourcePanel?include_prereleases?style=plastic
-[shield:support-warp]: http://img.shields.io/badge/github/v/release/BobPalmer/WarpDrive/releases/latest?include_prereleases?style=plastic
-[shield:support-crp]: http://img.shields.io/badge/github/v/release/BobPalmer/CommunityResourcePack/releases/latest?include_prereleases?style=plastic
+[shield:support-mm]: http://img.shields.io/github/v/release/sarbian/ModuleManager?include_prereleases?style=plastic
+[shield:support-arp]: http://img.shields.io/github/v/release/TriggerAu/AlternateResourcePanel?include_prereleases?style=plastic
+[shield:support-warp]: http://img.shields.io/github/v/release/BobPalmer/WarpDrive/releases/latest?include_prereleases?style=plastic
+[shield:support-crp]: http://img.shields.io/github/v/release/BobPalmer/CommunityResourcePack/releases/latest?include_prereleases?style=plastic
 [shield:support-di]: http://img.shields.io/badge/Dang%20It-v0.6.2-blue.svg
 [shield:support-dr]: http://img.shields.io/badge/Deadly%20Reentry-v7.4.7.1-red.svg
 [shield:support-epl]: http://img.shields.io/badge/Extraplanetary%20Launchpads-v5.4.0-orange.svg
