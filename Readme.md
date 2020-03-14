@@ -38,11 +38,9 @@ As of writing, ScrapYard does the following:
 *See [ChangeLog][MOD:changelog] for full details of mod changes*
 
 ### Dependencies
-- [x] Kerbal Space Program: [![][SHIELD:ksp]][KSP:website]
-
-- [Kerbal Space Program](https://kerbalspaceprogram.com) v1.9.1, ***may*** work on earlier versions (YMMV)
-- [x] Module Manager: [![][shield:support-mm]][thread:mm]
-- [ModuleManager](https://forum.kerbalspaceprogram.com/index.php?/topic/50533-**)
+- [x] Kerbal Space Program: [![][SHIELD:ksp]][KSP:website]***may*** work on other versions (YMMV)
+- [x] [![][shield:support-mm]][thread:mm]: Module Manager  
+- [x] [![][shield:support-mc]][thread:mc]: Magiccore  
 - [Magicore](http://forum.kerbalspaceprogram.com/index.php?/topic/97033-*)
 
 ### Recomends
@@ -150,6 +148,8 @@ Mods using ScrapYard:
 
 
 [thread:mm]: http://forum.kerbalspaceprogram.com/index.php?/topic/50533-*
+[thread:mc]: http://forum.kerbalspaceprogram.com/index.php?/topic/97033-*
+
 [thread:arp]: http://forum.kerbalspaceprogram.com/index.php?/topic/54876-*
 [thread:warp]: http://forum.kerbalspaceprogram.com/index.php?/topic/90899-*
 [thread:crp]: http://forum.kerbalspaceprogram.com/index.php?/topic/83007-*
@@ -167,6 +167,7 @@ Mods using ScrapYard:
 [thread:df]: http://forum.kerbalspaceprogram.com/index.php?/topic/112328-*
 
 [shield:support-mm]: http://img.shields.io/github/v/release/sarbian/ModuleManager?include_prereleases?style=plastic
+[shield:support-mc]: http://img.shields.io/github/v/release/magico13/MagiCore?include_prereleases?style=plastic
 [shield:support-arp]: http://img.shields.io/github/v/release/TriggerAu/AlternateResourcePanel?include_prereleases?style=plastic
 [shield:support-warp]: http://img.shields.io/github/v/release/BobPalmer/WarpDrive/releases/latest?include_prereleases?style=plastic
 [shield:support-crp]: http://img.shields.io/github/v/release/BobPalmer/CommunityResourcePack/releases/latest?include_prereleases?style=plastic
