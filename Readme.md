@@ -148,7 +148,7 @@ Mods using ScrapYard:
 
 
 [thread:mm]: http://forum.kerbalspaceprogram.com/index.php?/topic/50533-*
-[thread:mc]: http://forum.kerbalspaceprogram.com/index.php?/topic/97033-*
+[thread:mc]: https://forum.kerbalspaceprogram.com/index.php?/topic/178484-*
 
 [thread:arp]: http://forum.kerbalspaceprogram.com/index.php?/topic/54876-*
 [thread:warp]: http://forum.kerbalspaceprogram.com/index.php?/topic/90899-*
@@ -167,7 +167,7 @@ Mods using ScrapYard:
 [thread:df]: http://forum.kerbalspaceprogram.com/index.php?/topic/112328-*
 
 [shield:support-mm]: http://img.shields.io/github/v/release/sarbian/ModuleManager?include_prereleases?style=plastic
-[shield:support-mc]: http://img.shields.io/github/v/release/magico13/MagiCore?include_prereleases?style=plastic
+[shield:support-mc]: http://img.shields.io/github/v/release/linuxgurugamer/MagiCore?include_prereleases?style=plastic
 [shield:support-arp]: http://img.shields.io/github/v/release/TriggerAu/AlternateResourcePanel?include_prereleases?style=plastic
 [shield:support-warp]: http://img.shields.io/github/v/release/BobPalmer/WarpDrive/releases/latest?include_prereleases?style=plastic
 [shield:support-crp]: http://img.shields.io/github/v/release/BobPalmer/CommunityResourcePack/releases/latest?include_prereleases?style=plastic
