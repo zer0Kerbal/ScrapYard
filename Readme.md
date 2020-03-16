@@ -102,7 +102,7 @@ License: ![License MIT][shield:license] ![][LOGO:mit]
 [MOD:issues]:       https://github.com/zer0Kerbal/ScrapYard/issues
 [MOD:wiki]:         https://github.com/zer0Kerbal/ScrapYard/
 [MOD:known]:        https://github.com/zer0Kerbal/ScrapYard/wiki/Known-Issues
-[MOD:forum]:        
+[MOD:forum]:        https://forum.kerbalspaceprogram.com/index.php?/topic/192456-*
 [MOD:github:repo]:  https://github.com/zer0Kerbal/ScrapYard/
 [MOD:changelog]:    https://github.com/zer0Kerbal/ScrapYard/Changelog.cfg
 <!--- original mod stuff -->
