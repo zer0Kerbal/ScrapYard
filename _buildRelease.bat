@@ -23,7 +23,7 @@ set GAMEDIR=ScrapYard
 set GAMEDATA="GameData\"
 rem set SUBDIR="KermangeddonIndustries\"
 set VERSIONFILE=%GAMEDIR%.version
-set LICENSE="License.txt"
+rem set LICENSE="License.txt"
 Set LICENSETEXT="MIT.txt"
 set README="Readme.md"
 set JQ=C:\ProgramData\chocolatey\lib\jq\tools\jq.exe
@@ -37,7 +37,7 @@ copy /Y "%1%2" "%GAMEDATA%\%GAMEDIR%\Plugins"
 copy /Y %GAMEDIR%.version %GAMEDATA%%SUBDIR%%GAMEDIR%
 copy /Y Changelog.cfg %GAMEDATA%\%SUBDIR%%GAMEDIR%
 
-if "%LICENSE%" NEQ "" copy /y  %LICENSE% %GAMEDATA%\%SUBDIR%\%GAMEDIR%
+rem if "%LICENSE%" NEQ "" copy /y  %LICENSE% %GAMEDATA%\%SUBDIR%\%GAMEDIR%
 if "%LICENSETEXT%" NEQ "" copy /y  %LICENSETEXT% %GAMEDATA%\%SUBDIR%\%GAMEDIR%
 if "%README%" NEQ "" copy /Y %README% %GAMEDATA%\%SUBDIR%\%GAMEDIR%
 
