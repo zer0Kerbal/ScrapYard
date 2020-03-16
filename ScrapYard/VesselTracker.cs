@@ -130,7 +130,7 @@ namespace ScrapYard
                 catch (Exception ex)
                 {
                     Logging.Log("Exception while assigning VesselTracker", Logging.LogType.ERROR);
-                    Logging.LogException(ex);
+                    Logging.LogException(ex, "Exception while assigning VesselTracker");
                 }
             }
         }

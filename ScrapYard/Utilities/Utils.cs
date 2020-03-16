@@ -30,7 +30,7 @@ namespace ScrapYard.Utilities
             }
             catch (Exception ex)
             {
-                Logging.LogException(ex);
+                Logging.LogException(ex, "StringToGUID");
             }
             return null;
         }

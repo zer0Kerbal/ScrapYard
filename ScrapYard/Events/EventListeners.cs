@@ -97,7 +97,7 @@ namespace ScrapYard
                     }
                     catch(Exception ex)
                     {
-                        Logging.LogException(ex);
+                        Logging.LogException(ex, "VesselRecovery");
                     }
                 }
         }

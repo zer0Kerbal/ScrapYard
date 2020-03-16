@@ -82,7 +82,7 @@ namespace ScrapYard
                 Exception ex;
                 if ((ex = msg as Exception) != null)
                 {
-                    LogException(ex);
+                    LogException(ex, final);
                 }
                 else
                 {
@@ -97,6 +97,11 @@ namespace ScrapYard
         /// <param name="ex">The exception to log</param>
         internal static void LogException(Exception ex)
         {
+            Debug.LogException(ex);
+        }
+        internal static void LogException(Exception ex, string message)
+        {
+            Log(message);
             Debug.LogException(ex);
         }
     }

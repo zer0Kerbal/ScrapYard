@@ -98,7 +98,7 @@ namespace ScrapYard
             //call upon the powers of MagiCore to do some parsing
             //right now this just uses the Math Parser, but I'd like to have string comparisons as well
 
-            double result = MagiCore.MathParsing.ParseMath("SY_REQUIREMENT_PROCESSING", requirement, variables);
+            double result = Utilities.MathParsing.ParseMath("SY_REQUIREMENT_PROCESSING", requirement, variables);
 
             return (result > 0);
         }

@@ -30,7 +30,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-    <PropertyGroup>
+  <PropertyGroup>
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
@@ -43,9 +43,9 @@
     <TransformOutOfDateOnly>false</TransformOutOfDateOnly>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="$(DevDir19)\GameData\MagiCore\Plugins\MagiCore.dll">
-      <Private>False</Private>
-    </Reference>
+    <!-- <Reference Include="$(DevDir19)\GameData\MagiCore\Plugins\MagiCore.dll"> -->
+    <!-- <Private>False</Private> -->
+    <!-- </Reference> -->
     <Reference Include="$(DevDir19)\KSP_x64_Data\Managed\Assembly-CSharp.dll">
       <Private>False</Private>
     </Reference>
@@ -109,6 +109,8 @@
     <Compile Include="UI\InstanceSelectorVM.cs" />
     <Compile Include="UI\PartInstance.cs" />
     <Compile Include="UI\WindowBase.cs" />
+    <Compile Include="Utilities\EventBehavior.cs" />
+    <Compile Include="Utilities\MathParsing.cs" />
     <Compile Include="Utilities\ConfigNodeUtils.cs" />
     <Compile Include="Utilities\EditorApplySpecialCases.cs" />
     <Compile Include="Utilities\EditorHandling.cs" />
@@ -132,10 +134,10 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-    <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" />
   <PropertyGroup>
-     <PostBuildEvent>
-     </PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>

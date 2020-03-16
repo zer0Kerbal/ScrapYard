@@ -252,7 +252,7 @@ namespace ScrapYard
             }
             catch (Exception ex)
             {
-                Logging.LogException(ex);
+                Logging.LogException(ex, "PartInventory: Copy");
             }
             finally
             {
@@ -305,7 +305,7 @@ namespace ScrapYard
                 }
                 catch (Exception ex)
                 {
-                    Logging.LogException(ex);
+                    Logging.LogException(ex, "ConfigNode");
                 }
                 watcher.Stop();
                 if (!disableEvents)

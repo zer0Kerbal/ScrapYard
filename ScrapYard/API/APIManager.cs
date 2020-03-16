@@ -312,7 +312,7 @@ namespace ScrapYard
             }
             catch (Exception ex)
             {
-                Logging.LogException(ex);
+                Logging.LogException(ex, "GetAllInventoryParts");
             }
             return null;
         }
@@ -340,7 +340,7 @@ namespace ScrapYard
             }
             catch (Exception ex)
             {
-                Logging.LogException(ex);
+                Logging.LogException(ex, "RefreshPart_Node");
             }
             return false;
         }

@@ -361,7 +361,7 @@ namespace ScrapYard
                     catch (Exception ex)
                     {
                         Logging.Log("Error while loading part tracker with node: " + node.name, Logging.LogType.ERROR);
-                        Logging.LogException(ex);
+                        Logging.LogException(ex, "loading part tracker with node");
                     }
                 }
             }

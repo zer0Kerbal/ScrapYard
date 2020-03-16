@@ -39,7 +39,6 @@ ScrapYard is a mod that provides a part inventory that can be shared between mul
 ### Dependencies
 - [x] [Kerbal Space Program][KSP:website] [![][shield:ksp]][KSP:website] ***may*** work on other versions (YMMV)
 - [x] [Module Manager][thread:mm]  
-- [x] [Magiccore][thread:mc]  
 ### Recomends  
 - [x] [OhScrap!][thread:ohscrap]  
 - [x] [Kerbal Change Log][thread:kcl]  
