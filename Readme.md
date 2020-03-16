@@ -73,7 +73,7 @@ There are numerous reasons you might want to integrate with ScrapYard (with a ha
 - Many more that I can’t think of off the top of my head
 
 Mods using ScrapYard:
-- [Kerbal Construction Time][thread:kct] by [@linuxgurugamer][LINK:linuxgurugamer] / [@magico13][LINK:magico13]
+- [Kerbal Construction Time][thread:kct] by [@linuxgurugamer][LINK:linuxgurugamer] / [@magico13][LINK:magico13]  
 - [Oh Scrap!][thread:ohscrap] by [@severedsolo][LINK:severedsolo] / [@zer0Kerbal][LINK:zer0Kerbal]
 ***  
 *red box below is a link to forum post on how to get support*  
@@ -86,7 +86,7 @@ License: ![License MIT][shield:license] ![][LOGO:mit]
 > *** All bundled mods are distributed under their own licenses***<br>
 > *** All art assets (textures, models, animations) are distributed under their own licenses*** 
 ### Original
-[Thread][MOD:original:thread]
+[Thread][MOD:original:thread]  
 [Download][MOD:original:download]  
 Source: [GitHub][MOD:original:source]  
 License: ![License MIT][shield:license] ![][LOGO:mit]  

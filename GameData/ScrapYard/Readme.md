@@ -73,7 +73,7 @@ There are numerous reasons you might want to integrate with ScrapYard (with a ha
 - Many more that I can’t think of off the top of my head
 
 Mods using ScrapYard:
-- [Kerbal Construction Time][thread:kct] by [@linuxgurugamer][LINK:linuxgurugamer] / [@magico13][LINK:magico13]
+- [Kerbal Construction Time][thread:kct] by [@linuxgurugamer][LINK:linuxgurugamer] / [@magico13][LINK:magico13]  
 - [Oh Scrap!][thread:ohscrap] by [@severedsolo][LINK:severedsolo] / [@zer0Kerbal][LINK:zer0Kerbal]
 ***  
 *red box below is a link to forum post on how to get support*  
@@ -86,7 +86,7 @@ License: ![License MIT][shield:license] ![][LOGO:mit]
 > *** All bundled mods are distributed under their own licenses***<br>
 > *** All art assets (textures, models, animations) are distributed under their own licenses*** 
 ### Original
-[Thread][MOD:original:thread]
+[Thread][MOD:original:thread]  
 [Download][MOD:original:download]  
 Source: [GitHub][MOD:original:source]  
 License: ![License MIT][shield:license] ![][LOGO:mit]  
@@ -102,7 +102,7 @@ License: ![License MIT][shield:license] ![][LOGO:mit]
 [MOD:issues]:       https://github.com/zer0Kerbal/ScrapYard/issues
 [MOD:wiki]:         https://github.com/zer0Kerbal/ScrapYard/
 [MOD:known]:        https://github.com/zer0Kerbal/ScrapYard/wiki/Known-Issues
-[MOD:forum]:        
+[MOD:forum]:        https://forum.kerbalspaceprogram.com/index.php?/topic/192456-*
 [MOD:github:repo]:  https://github.com/zer0Kerbal/ScrapYard/
 [MOD:changelog]:    https://github.com/zer0Kerbal/ScrapYard/Changelog.cfg
 <!--- original mod stuff -->
