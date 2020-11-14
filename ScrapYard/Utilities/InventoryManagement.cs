@@ -71,7 +71,7 @@ namespace ScrapYard.Utilities
             }
 
             ScrapYardEvents.OnSYInventoryAppliedToVessel.Fire();
-            GameEvents.onEditorShipModified.Fire(EditorLogic.fetch.ship);
+            EditorHandling.UpdateCostUI();
         }
 
         /// <summary>
@@ -111,7 +111,7 @@ namespace ScrapYard.Utilities
                 }
             }
             ScrapYardEvents.OnSYInventoryAppliedToVessel.Fire();
-            GameEvents.onEditorShipModified.Fire(EditorLogic.fetch.ship);
+            EditorHandling.UpdateCostUI();
         }
 
         /// <summary>
