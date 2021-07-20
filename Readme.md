@@ -9,9 +9,9 @@ updated: 2020 03 16 -->
 # ScrapYard (SYD)
 ## The Common Part Inventory
 ![Mod Version][shield:mod:latest] 
-![KSP version][shield:ksp] ![KSP-AVC][shield:kspavc] ![License MIT][shield:license] ![][LOGO:mit]   
-![SpaceDock][shield:spacedock] ![CKAN][shield:ckan] ![GitHub][shield:github] ![Curseforge][shield:curseforge]  
-![Validate AVC .version files][shield:avcvalid]  
+![KSP version][shield:ksp] ![License MIT][shield:license] ![][LOGO:mit]   
+![SpaceDock][shield:curseforge] ![CKAN][shield:ckan] ![GitHub][shield:github] ![Curseforge][shield:spacedock]  
+![KSP-AVC][shield:kspavc] ![Validate AVC .version files][shield:avcvalid]  
 
 ### Preamble by [@severedsolo][LINK:severedsolo]: 
 > So you may have heard that @magico13 is giving up modding KSP. I've got the honour of taking over support for ScrapYard, because it makes sense as I have my own mod that depends on it (Oh Scrap!). I want to take this opportunity to thank magico13 for all his hard work and contributions to the community over the years, as I know that my own KSP experience would be much poorer without his mods. Anyway, enough from me.
@@ -136,10 +136,10 @@ License: ![License MIT][shield:license] ![][LOGO:mit]
 [shield:ksp]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/ksp.json
 [shield:license]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/json/license.json
 [shield:kspavc]:     https://img.shields.io/badge/KSP-AVC--supported-brightgreen.svg?style=plastic
-[shield:spacedock]:  https://img.shields.io/badge/SpaceDock-listed-blue.svg?style=plastic
+[shield:spacedock]:  https://img.shields.io/badge/SpaceDock-Listed-blue.svg?style=plastic
 [shield:ckan]:       https://img.shields.io/badge/CKAN-Indexed-blue.svg?style=plastic
 [shield:github]:     https://img.shields.io/badge/Github-Indexed-blue.svg?style=plastic&logo=github
-[shield:curseforge]: https://img.shields.io/badge/CurseForge-listed-blue.svg?style=plastic
+[shield:curseforge]: https://img.shields.io/badge/CurseForge-Listed-blue.svg?style=plastic
 [shield:avcvalid]:    https://github.com/zer0Kerbal/ScrapYard/workflows/Validate%20AVC%20.version%20files/badge.svg
 
 [thread:mm]: http://forum.kerbalspaceprogram.com/index.php?/topic/50533-*
