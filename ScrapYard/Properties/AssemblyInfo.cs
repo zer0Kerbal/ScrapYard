@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ScrapYard")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A common part inventory addon for Kerbal Space Program")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("ScrapYard")]

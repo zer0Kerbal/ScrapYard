@@ -1,5 +1,5 @@
 {
-    "NAME":          "ScrapYard",
+    "NAME":          "ScrapYard_ContractConfigurator",
     "URL":           "https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/GameData/ScrapYard/ScrapYard.version",
 	"DOWNLOAD":       "https://github.com/zer0Kerbal/ScrapYard/releases/latest",
 	"CHANGE_LOG_URL": "https://raw.githubusercontent.com/zer0Kerbal/ScrapYard/master/Changelog.cfg",

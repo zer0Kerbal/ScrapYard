@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 1,
-  "label": "ScrapYard",
-  "labelColor": "darkgreen",
-  "message": "2.1.1.0",
-  "color": "orange",
-  "style": "plastic"
+ "schemaVersion": 1,
+ "label": "ScrapYard",
+ "labelColor": "darkgreen",
+ "message": "2.2.0.0",
+ "color": "orange",
+ "style": "plastic"
 }
