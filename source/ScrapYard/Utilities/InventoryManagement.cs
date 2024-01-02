@@ -41,7 +41,7 @@ namespace ScrapYard.Utilities
         /// <param name="input">The vessel as a list of parts</param>
         public static void ApplyInventoryToVessel(IEnumerable<Part> input)
         {
-            PartInventory copy = ScrapYard.Instance.TheInventory.Copy();
+            PartInventory copy = ScrapYard.Instance.TheInventory.Copy();            
             foreach (Part part in input)
             {
                 //convert it to an inventorypart
@@ -57,19 +57,20 @@ namespace ScrapYard.Utilities
                 //if one was found...
                 if (inInventory != null)
                 {
-                    Logging.DebugLog("Found a part in inventory for " + inInventory.Name);
+                    Logging.DebugLog("A: Found a part in inventory for " + inInventory.Name);
                     //copy it's part tracker over
                     if (inInventory.TrackerModule != null && part.Modules?.Contains("ModuleSYPartTracker") == true)
                     {
                         ModuleSYPartTracker tracker = part.Modules["ModuleSYPartTracker"] as ModuleSYPartTracker;
                         tracker.TimesRecovered = inInventory.TrackerModule.TimesRecovered;
                         tracker.Inventoried = inInventory.TrackerModule.Inventoried;
-                        Logging.Log($"Copied tracker. Recovered {tracker.TimesRecovered} times with id {inInventory.ID}");
+                        tracker.ID = inInventory.ID;
+                        Logging.Log($"A: Copied tracker. Recovered {tracker.TimesRecovered} times with id {inInventory.ID}");                       
                     }
                 }
             }
 
-            ScrapYardEvents.OnSYInventoryAppliedToVessel.Fire();
+            ScrapYardEvents.OnSYInventoryAppliedToVessel.Fire();            
             GameEvents.onEditorShipModified.Fire(EditorLogic.fetch.ship);
         }
 
@@ -94,7 +95,7 @@ namespace ScrapYard.Utilities
                 //if one was found...
                 if (inInventory != null)
                 {
-                    Logging.DebugLog("Found a part in inventory for " + inInventory.Name);
+                    Logging.DebugLog("B:Found a part in inventory for " + inInventory.Name);
                     //copy it's part tracker over
                     ConfigNode trackerNode;
                     if (inInventory.TrackerModule != null && (trackerNode = partNode.GetModuleNode("ModuleSYPartTracker")) != null)
@@ -105,11 +106,12 @@ namespace ScrapYard.Utilities
                         trackerNode.SetValue("ID", id);
                         trackerNode.SetValue("TimesRecovered", recovered);
                         trackerNode.SetValue("Inventoried", inventoried);
-                        Logging.DebugLog($"Copied tracker. Recovered {recovered} times with id {id}");
+                        Logging.DebugLog($"B:Copied tracker. Recovered {recovered} times with id {id}");
+                      
                     }
                 }
             }
-            ScrapYardEvents.OnSYInventoryAppliedToVessel.Fire();
+            ScrapYardEvents.OnSYInventoryAppliedToVessel.Fire();            
             GameEvents.onEditorShipModified.Fire(EditorLogic.fetch.ship);
         }
 
