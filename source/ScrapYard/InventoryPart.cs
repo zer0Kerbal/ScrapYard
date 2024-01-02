@@ -128,7 +128,7 @@ namespace ScrapYard
             {
                 _dryCost -= (float)(resource.maxAmount * PartResourceLibrary.Instance.GetDefinition(resource.resourceName).unitCost);
             }
-
+            ID = originPart.persistentId;
             //Save modules
             if (originPart.Modules != null)
             {
@@ -137,6 +137,7 @@ namespace ScrapYard
                 {
                     string name = module.moduleName;
                     bool isTracker = name.Equals("ModuleSYPartTracker");
+                    
                     if (isTracker)
                     {
                         ConfigNode saved = new ConfigNode("MODULE");
@@ -145,13 +146,14 @@ namespace ScrapYard
                         if (isTracker)
                         {
                             TrackerModule = new TrackerModuleWrapper(saved);
+                            ID = TrackerModule.ID ?? ID;
                         }
                     }
                     _cachedModules.Add(module);
                 }
             }
-
-            ID = originPart.persistentId;
+            
+            
         }
 
         /// <summary>
@@ -160,33 +162,34 @@ namespace ScrapYard
         /// <param name="originPartSnapshot">The <see cref="ProtoPartSnapshot"/> to use as the basis of the <see cref="InventoryPart"/>.</param>
         public InventoryPart(ProtoPartSnapshot originPartSnapshot)
         {
-                _name = originPartSnapshot.partInfo.name;
-                if (ScrapYard.Instance.Settings.PartBlacklist.Contains(Name))
+            _name = originPartSnapshot.partInfo.name;
+            if (ScrapYard.Instance.Settings.PartBlacklist.Contains(Name))
+            {
+                DoNotStore = true;
+            }
+            float fuelCost;
+            ShipConstruction.GetPartCosts(originPartSnapshot, originPartSnapshot.partInfo, out _dryCost, out fuelCost);
+            ID = originPartSnapshot.persistentId;
+            //Save modules
+            if (originPartSnapshot.modules != null)
+            {
+                foreach (ProtoPartModuleSnapshot module in originPartSnapshot.modules)
                 {
-                    DoNotStore = true;
-                }
-                float fuelCost;
-                ShipConstruction.GetPartCosts(originPartSnapshot, originPartSnapshot.partInfo, out _dryCost, out fuelCost);
-
-                //Save modules
-                if (originPartSnapshot.modules != null)
-                {
-                    foreach (ProtoPartModuleSnapshot module in originPartSnapshot.modules)
+                    string name = module.moduleName;
+                    bool isTracker = name.Equals("ModuleSYPartTracker");
+                    if (isTracker || moduleNameMatchesAnything(name)) //only save if there is a potential match
                     {
-                        string name = module.moduleName;
-                        bool isTracker = name.Equals("ModuleSYPartTracker");
-                        if (isTracker || moduleNameMatchesAnything(name)) //only save if there is a potential match
+                        ConfigNode saved = module.moduleValues;
+                        _allModules.Add(saved);
+                        if (isTracker)
                         {
-                            ConfigNode saved = module.moduleValues;
-                            _allModules.Add(saved);
-                            if (isTracker)
-                            {
-                                TrackerModule = new TrackerModuleWrapper(saved);
-                            }
+                            TrackerModule = new TrackerModuleWrapper(saved);
+                            ID = TrackerModule.ID ?? ID;
                         }
                     }
                 }
-                ID = originPartSnapshot.persistentId;
+            }
+
         }
 
         /// <summary>
@@ -213,7 +216,15 @@ namespace ScrapYard
                     float dryMass, fuelMass, fuelCost;
                     ShipConstruction.GetPartCostsAndMass(originPartConfigNode, availablePartForNode, out _dryCost, out fuelCost, out dryMass, out fuelMass);
                 }
-
+                uint id = 0;
+                if (originPartConfigNode.TryGetValue("persistentId", ref id))
+                {
+                    ID = id;
+                }
+                else
+                {
+                    Logging.Log($"Could not find a persistent ID for part {_name}", Logging.LogType.ERROR);
+                }
                 if (originPartConfigNode.HasNode("MODULE"))
                 {
                     foreach (ConfigNode module in originPartConfigNode.GetNodes("MODULE"))
@@ -224,19 +235,12 @@ namespace ScrapYard
                         if (isTracker)
                         {
                             TrackerModule = new TrackerModuleWrapper(module);
+                            ID = TrackerModule.ID ?? ID;
                         }
                     }
                 }
 
-                uint id = 0;
-                if (originPartConfigNode.TryGetValue("persistentId", ref id))
-                {
-                    ID = id;
-                }
-                else
-                {
-                    Logging.Log($"Could not find a persistent ID for part {_name}", Logging.LogType.ERROR);
-                }
+              
             }
         }
 
