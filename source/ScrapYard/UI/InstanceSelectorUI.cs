@@ -77,16 +77,7 @@ namespace ScrapYard.UI
                     {
                         GUILayout.BeginVertical(GUI.skin.textArea);
                         GUILayout.BeginHorizontal();
-                        int recovered = instance.BackingPart.TrackerModule.TimesRecovered;
-                        //string use = recovered != 1 ? "Uses" : "Use";
-                        string _0 = Localizer.Format("#SYD-GUI-0");
-                        string _1 = Localizer.Format("#SYD-GUI-1");
-                        //string use = recovered != 1 ? Localizer.Format("#SYD-GUI-0") : Localizer.Format("#SYD-GUI-1");
-                        string use = recovered != 1 ? _0 : _1;
-
-                        //GUILayout.Label($"{recovered} Previous {use}");
-                        //GUILayout.Label($"{recovered} #SYD-GUI-2 {use}");
-                        GUILayout.Label(Localizer.Format("#SYD-GUI-2", recovered, use));
+                        GUILayout.Label(instance.DisplayMetadata.Label);
 
                         GUILayout.FlexibleSpace();
                         //GUILayout.Label($"{list.Count} In Inventory");

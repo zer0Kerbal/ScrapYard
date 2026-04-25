@@ -51,7 +51,17 @@ namespace ScrapYard.Utilities
                         if (iPart.TrackerModule.Inventoried)
                         {
                             Stopwatch remWatch = Stopwatch.StartNew();
-                            InventoryPart inInventory = copy.RemovePart(iPart, ComparisonStrength.STRICT); //strict, we only remove parts that are exact
+                            InventoryPart inInventory = copy.FindPart(iPart.ID);
+                            if (inInventory != null && inInventory.Name == iPart.Name)
+                            {
+                                inInventory = copy.RemovePart(iPart.ID);
+                                (EditorLogic.fetch.ship.Parts[i].Modules["ModuleSYPartTracker"] as ModuleSYPartTracker)
+                                    ?.ApplyInventoryState(inInventory.ID, inInventory.TrackerModule.TimesRecovered, inInventory.TrackerModule.Inventoried);
+                            }
+                            else
+                            {
+                                inInventory = copy.RemovePart(iPart, ComparisonStrength.TRACKER);
+                            }
                             if (inInventory == null)
                             {
                                 //reset their tracker status
@@ -105,7 +115,7 @@ namespace ScrapYard.Utilities
                 InventoryPart iPart = new InventoryPart(part);
                 if (iPart.TrackerModule.Inventoried)
                 {
-                    totalCost -= iPart.DryCost;
+                    totalCost -= (float)InventoryManagement.GetInventoryUseRefund(iPart);
                 }
             }
             //set visible cost in editor UI
@@ -156,7 +166,7 @@ namespace ScrapYard.Utilities
             foreach (Part part in EditorLogic.fetch.ship)
             {
                 InventoryPart iPart = new InventoryPart(part);
-                InventoryPart found = retList.FirstOrDefault(ip => ip.IsSameAs(iPart, ComparisonStrength.STRICT));
+                InventoryPart found = retList.FirstOrDefault(ip => ip.ID == iPart.ID && ip.Name == iPart.Name);
                 if (found != null)
                 {
                     retList.Remove(found);
@@ -168,7 +178,7 @@ namespace ScrapYard.Utilities
                 foreach (Part part in EditorLogic.FindPartsInChildren(EditorLogic.SelectedPart))
                 {
                     InventoryPart iPart = new InventoryPart(part);
-                    InventoryPart found = retList.FirstOrDefault(ip => ip.IsSameAs(iPart, ComparisonStrength.STRICT));
+                    InventoryPart found = retList.FirstOrDefault(ip => ip.ID == iPart.ID && ip.Name == iPart.Name);
                     if (found != null)
                     {
                         retList.Remove(found);

@@ -151,7 +151,8 @@ namespace ScrapYard
                 }
             }
 
-            ID = originPart.persistentId;
+            uint trackerId = TrackerModule.ID.GetValueOrDefault();
+            ID = trackerId != 0 ? trackerId : originPart.persistentId;
         }
 
         /// <summary>
@@ -186,7 +187,8 @@ namespace ScrapYard
                         }
                     }
                 }
-                ID = originPartSnapshot.persistentId;
+                uint trackerId = TrackerModule.ID.GetValueOrDefault();
+                ID = trackerId != 0 ? trackerId : originPartSnapshot.persistentId;
         }
 
         /// <summary>
@@ -228,8 +230,12 @@ namespace ScrapYard
                     }
                 }
 
-                uint id = 0;
-                if (originPartConfigNode.TryGetValue("persistentId", ref id))
+                uint id = TrackerModule.ID.GetValueOrDefault();
+                if (id != 0)
+                {
+                    ID = id;
+                }
+                else if (originPartConfigNode.TryGetValue("persistentId", ref id))
                 {
                     ID = id;
                 }
@@ -419,9 +425,7 @@ namespace ScrapYard
                 if (part.Modules.Contains("ModuleSYPartTracker"))
                 {
                     ModuleSYPartTracker tracker = part.Modules["ModuleSYPartTracker"] as ModuleSYPartTracker;
-                    tracker.TimesRecovered = TrackerModule.TimesRecovered;
-                    tracker.Inventoried = TrackerModule.Inventoried;
-                    tracker.ID = TrackerModule.ID.GetValueOrDefault();
+                    tracker.ApplyInventoryState(TrackerModule.ID.GetValueOrDefault(), TrackerModule.TimesRecovered, TrackerModule.Inventoried);
                 }
             }
             //fire part changed event

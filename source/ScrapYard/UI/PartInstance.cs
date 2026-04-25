@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 using KSP.Localization;
+using ScrapYard.Utilities;
 
 namespace ScrapYard.UI
 {
@@ -15,12 +16,24 @@ namespace ScrapYard.UI
         private bool _selling;
         private InstanceModulesVM _moduleVM;
         private InstanceModulesUI _moduleUI;
+        private InventoryDisplayMetadata _displayMetadata;
 
         //private string _sellOrDiscard = "Discard";
         private string _sellOrDiscard = Localizer.Format("#SYD-GUI-11");
 
         public event EventHandler Updated;
         public InventoryPart BackingPart { get { return _backingPart; } }
+        public InventoryDisplayMetadata DisplayMetadata
+        {
+            get
+            {
+                if (_displayMetadata == null)
+                {
+                    _displayMetadata = InventoryDisplayMetadata.For(_backingPart);
+                }
+                return _displayMetadata;
+            }
+        }
 
         public PartInstance(PartInventory inventory, InventoryPart iPart, bool selling, Part toApply)
         {
@@ -75,7 +88,8 @@ namespace ScrapYard.UI
             if (_selling)
             {
                 //msg = $"Are you sure you want to sell the part for {_backingPart.DryCost} funds?";
-                msg = Localizer.Format("#SYD-GUI-17", _backingPart.DryCost);
+                double saleValue = _backingPart.DryCost * ScrapYard.Instance.Settings.CurrentSaveSettings.FundsSalePercent / 100.0;
+                msg = Localizer.Format("#SYD-GUI-17", saleValue);
             }
 
             //MultiOptionDialog diag = new MultiOptionDialog("confirmDiscard",
@@ -92,7 +106,8 @@ namespace ScrapYard.UI
                         Logging.Log($"Sold/Discarded {removed.Name}:{removed.ID}");
                         if (_selling)
                         {
-                            Funding.Instance?.AddFunds(removed.DryCost, TransactionReasons.Vessels);
+                            double saleValue = removed.DryCost * ScrapYard.Instance.Settings.CurrentSaveSettings.FundsSalePercent / 100.0;
+                            Funding.Instance?.AddFunds(saleValue, TransactionReasons.Vessels);
                         }
                         Updated?.Invoke(this, EventArgs.Empty);
                     }
@@ -115,6 +130,8 @@ namespace ScrapYard.UI
                 }
             }
             _backingPart.FullyApplyToPart(selectedPart);
+            ScrapYard.Instance.EditorVerificationRequired = true;
+            EditorHandling.UpdateEditorCost();
             Updated?.Invoke(this, EventArgs.Empty);
         }
     }

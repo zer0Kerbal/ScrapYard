@@ -81,7 +81,12 @@ namespace ScrapYard.UI
             {
                 PartInstance instance = new PartInstance(inventory, iPart, selling, ApplyPart);
                 instance.Updated += Instance_Updated;
-                List<PartInstance> list = Parts.FirstOrDefault(l => l.FirstOrDefault()?.BackingPart.IsSameAs(iPart, ComparisonStrength.TRACKER) == true);
+                List<PartInstance> list = Parts.FirstOrDefault(l =>
+                {
+                    PartInstance first = l.FirstOrDefault();
+                    return CanGroupForDisplay(first?.BackingPart, iPart)
+                        && first.DisplayMetadata.GroupKey == instance.DisplayMetadata.GroupKey;
+                });
                 if (list == null)
                 {
                     list = new List<PartInstance>();
@@ -94,12 +99,28 @@ namespace ScrapYard.UI
             Parts.Sort(leastToMostSorter);
         }
 
+        private bool CanGroupForDisplay(InventoryPart a, InventoryPart b)
+        {
+            if (a == null || b == null)
+            {
+                return false;
+            }
+            if (!string.Equals(a.Name, b.Name, StringComparison.OrdinalIgnoreCase))
+            {
+                return false;
+            }
+
+            return Math.Abs(a.DryCost - b.DryCost) <= 1.0;
+        }
+
         public void RefreshApplyPart()
         {
             if (ApplyPart != null)
             {
                 ApplyPart.Modules.GetModule<ModuleSYPartTracker>()?.MakeFresh();
                 ScrapYardEvents.OnSYInventoryAppliedToPart.Fire(ApplyPart);
+                ScrapYard.Instance.EditorVerificationRequired = true;
+                EditorHandling.UpdateEditorCost();
                 UpdatePartList();
             }
         }
@@ -153,6 +174,8 @@ namespace ScrapYard.UI
             if (EditorLogic.fetch != null && EditorLogic.fetch.ship != null && EditorLogic.fetch.ship.Parts.Any())
             {
                 InventoryManagement.ApplyInventoryToVessel(EditorLogic.fetch.ship.Parts);
+                ScrapYard.Instance.EditorVerificationRequired = true;
+                UpdatePartList();
             }
         }
 
@@ -169,6 +192,7 @@ namespace ScrapYard.UI
                 }
                 ScrapYardEvents.OnSYInventoryAppliedToVessel.Fire();
                 ScrapYard.Instance.EditorVerificationRequired = true;
+                EditorHandling.UpdateEditorCost();
             }
         }
 

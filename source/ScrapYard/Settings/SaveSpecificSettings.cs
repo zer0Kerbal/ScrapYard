@@ -52,6 +52,10 @@ namespace ScrapYard
         [GameParameters.CustomIntParameterUI("#SYD-settings-FundsSalePercent", toolTip = "#SYD-settings-FundsSalePercent-Tip", minValue = 0, maxValue = 100, stepSize = 1)]
         public int FundsSalePercent = 100;
 
+        /// <summary>Cost charged when using an inventory part, as a percentage of dry cost</summary>
+        [GameParameters.CustomIntParameterUI("#SYD-settings-InventoryUseCostPercent", toolTip = "#SYD-settings-InventoryUseCostPercent-Tip", minValue = 0, maxValue = 100, stepSize = 1)]
+        public int InventoryUseCostPercent = 0;
+
         /// <summary>Additional debug logging</summary>
         [GameParameters.CustomParameterUI("#SYD-settings-DebugLogging", toolTip = "#SYD-settings-DebugLogging-Tip")]
         public bool DebugLogging = false;

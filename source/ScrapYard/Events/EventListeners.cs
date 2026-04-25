@@ -168,7 +168,7 @@ namespace ScrapYard
         {
             if (ScrapYard.Instance.InstanceSelectorUI.IsVisible)
             {
-                ScrapYard.Instance.InstanceSelectorUI.Show(part, null);
+                ScrapYard.Instance.InstanceSelectorUI.Show();
             }
         }
 
@@ -191,7 +191,7 @@ namespace ScrapYard
         private void shipOrPartModified()
         {
             ScrapYard.Instance.EditorVerificationRequired = true;
-            EditorHandling.UpdateCostUI();
+            EditorHandling.UpdateEditorCost();
         }
 
 
@@ -218,7 +218,7 @@ namespace ScrapYard
                         InventoryPart iP = new InventoryPart(p);
                         if (iP.TrackerModule.Inventoried)
                         {
-                            cost += iP.DryCost * ScrapYard.Instance.Settings.CurrentSaveSettings.FundsSalePercent;
+                            cost += iP.DryCost * ScrapYard.Instance.Settings.CurrentSaveSettings.FundsSalePercent / 100.0;
                             count++;
                             inventoriedParts.Add(iP);
                         }
