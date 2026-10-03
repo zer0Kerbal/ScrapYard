@@ -46,6 +46,12 @@ namespace ScrapYard.UI
                 _modules = new List<DisplayModule>();
                 foreach (ConfigNode node in _backingPart.ListModules())
                 {
+                    string moduleName = string.Empty;
+                    node.TryGetValue("name", ref moduleName);
+                    if (moduleName == "RealChuteModule")
+                    {
+                        continue;
+                    }
                     _modules.Add(new DisplayModule(node));
                 }
                 ShowModule(_modules.Count > _selectedGridItem ? _modules[_selectedGridItem].Module : null);

@@ -48,7 +48,7 @@ namespace ScrapYard.Modules
                 if (_id == null && HasModule)
                 {
                     uint id = 0;
-                    if (TrackerNode.TryGetValue("ID", ref id))
+                    if (TrackerNode.TryGetValue("id", ref id) || TrackerNode.TryGetValue("ID", ref id))
                     {
                         _id = id;
                     }
@@ -60,7 +60,7 @@ namespace ScrapYard.Modules
                 //set the ID in the actual node
                 if (HasModule && value.HasValue)
                 {
-                    TrackerNode.SetValue("ID", value.Value.ToString());
+                    TrackerNode.SetValue("id", value.Value.ToString(), true);
                 }
                  _id = value;
             }

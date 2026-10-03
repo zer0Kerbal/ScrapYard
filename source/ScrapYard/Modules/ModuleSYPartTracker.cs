@@ -28,7 +28,6 @@ namespace ScrapYard.Modules
             set
             {
                 id = value;
-                part.persistentId = value;
                 updateDisplay();
             }
         }
@@ -40,10 +39,6 @@ namespace ScrapYard.Modules
             {
                 id = part.persistentId;
             }
-            else if (id != 0)
-            {
-                ID = id; //set it on the part
-            }
             updateDisplay();
         }
         public override void OnInitialize()
@@ -52,10 +47,6 @@ namespace ScrapYard.Modules
             if (id == 0)
             {
                 id = part.persistentId;
-            }
-            else
-            {
-                ID = id; //set it on the part
             }
             updateDisplay();
         }
@@ -68,9 +59,17 @@ namespace ScrapYard.Modules
 
         public void MakeFresh()
         {
-            ID = FlightGlobals.CheckPartpersistentId(0, part, false, true);
+            ID = FlightGlobals.GetUniquepersistentId();
             TimesRecovered = 0;
             Inventoried = false;
+            updateDisplay();
+        }
+
+        public void ApplyInventoryState(uint inventoryId, int timesRecovered, bool inventoried)
+        {
+            id = inventoryId;
+            TimesRecovered = timesRecovered;
+            Inventoried = inventoried;
             updateDisplay();
         }
 

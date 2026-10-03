@@ -10,6 +10,12 @@ namespace ScrapYard.Utilities
     /// </summary>
     public static class InventoryManagement
     {
+        public static double GetInventoryUseRefund(InventoryPart part)
+        {
+            int useCostPercent = Math.Max(0, Math.Min(100, ScrapYard.Instance.Settings.CurrentSaveSettings.InventoryUseCostPercent));
+            return part.DryCost * (100 - useCostPercent) / 100.0;
+        }
+
         /// <summary>
         /// Splits a list of parts into a list of those that are in the inventory and those that are not
         /// </summary>
@@ -51,26 +57,25 @@ namespace ScrapYard.Utilities
                 InventoryPart inInventory = copy.RemovePart(iPart.ID);
                 if (inInventory == null)
                 {
-                    inInventory = copy.RemovePart(iPart, ComparisonStrength.MODULES);
+                    inInventory = RemoveBestQuickApplyPart(copy, iPart);
                 }
 
                 //if one was found...
                 if (inInventory != null)
                 {
                     Logging.DebugLog("Found a part in inventory for " + inInventory.Name);
+                    inInventory.FullyApplyToPart(part);
                     //copy it's part tracker over
                     if (inInventory.TrackerModule != null && part.Modules?.Contains("ModuleSYPartTracker") == true)
                     {
                         ModuleSYPartTracker tracker = part.Modules["ModuleSYPartTracker"] as ModuleSYPartTracker;
-                        tracker.TimesRecovered = inInventory.TrackerModule.TimesRecovered;
-                        tracker.Inventoried = inInventory.TrackerModule.Inventoried;
+                        tracker.ApplyInventoryState(inInventory.ID, inInventory.TrackerModule.TimesRecovered, inInventory.TrackerModule.Inventoried);
                         Logging.Log($"Copied tracker. Recovered {tracker.TimesRecovered} times with id {inInventory.ID}");
                     }
                 }
             }
 
             ScrapYardEvents.OnSYInventoryAppliedToVessel.Fire();
-            GameEvents.onEditorShipModified.Fire(EditorLogic.fetch.ship);
         }
 
         /// <summary>
@@ -88,7 +93,7 @@ namespace ScrapYard.Utilities
                 InventoryPart inInventory = copy.RemovePart(iPart.ID);
                 if (inInventory == null)
                 {
-                    inInventory = copy.RemovePart(iPart, ComparisonStrength.MODULES);
+                    inInventory = RemoveBestQuickApplyPart(copy, iPart);
                 }
 
                 //if one was found...
@@ -102,15 +107,32 @@ namespace ScrapYard.Utilities
                         string id = inInventory.ID.ToString();
                         int recovered = inInventory.TrackerModule.TimesRecovered;
                         bool inventoried = inInventory.TrackerModule.Inventoried;
-                        trackerNode.SetValue("ID", id);
-                        trackerNode.SetValue("TimesRecovered", recovered);
-                        trackerNode.SetValue("Inventoried", inventoried);
+                        trackerNode.SetValue("id", id, true);
+                        trackerNode.SetValue("TimesRecovered", recovered, true);
+                        trackerNode.SetValue("Inventoried", inventoried, true);
                         Logging.DebugLog($"Copied tracker. Recovered {recovered} times with id {id}");
                     }
                 }
             }
             ScrapYardEvents.OnSYInventoryAppliedToVessel.Fire();
-            GameEvents.onEditorShipModified.Fire(EditorLogic.fetch.ship);
+        }
+
+        private static InventoryPart RemoveBestQuickApplyPart(PartInventory inventory, InventoryPart part)
+        {
+            IEnumerable<InventoryPart> candidates = inventory.FindParts(part, ComparisonStrength.MODULES);
+            if (candidates?.Any() != true)
+            {
+                candidates = inventory.FindParts(part, ComparisonStrength.COSTS);
+            }
+
+            InventoryPart selected = candidates
+                ?.OrderByDescending(p => InventoryDisplayMetadata.For(p).SafetyRating.GetValueOrDefault(-1))
+                .ThenBy(p => InventoryDisplayMetadata.For(p).Generation.GetValueOrDefault(int.MaxValue))
+                .ThenByDescending(p => InventoryDisplayMetadata.For(p).PreviousUses)
+                .ThenBy(p => p.ID)
+                .FirstOrDefault();
+
+            return selected == null ? null : inventory.RemovePart(selected, ComparisonStrength.STRICT);
         }
 
         /// <summary>
@@ -154,7 +176,15 @@ namespace ScrapYard.Utilities
                 InventoryPart iPart = new InventoryPart(part);
                 if (iPart.TrackerModule.Inventoried)
                 {
-                    InventoryPart inInventory = ScrapYard.Instance.TheInventory.RemovePart(iPart, ComparisonStrength.STRICT); //strict, we only remove parts that are exact
+                    InventoryPart inInventory = ScrapYard.Instance.TheInventory.FindPart(iPart.ID);
+                    if (inInventory != null && inInventory.Name == iPart.Name)
+                    {
+                        inInventory = ScrapYard.Instance.TheInventory.RemovePart(iPart.ID);
+                    }
+                    else
+                    {
+                        inInventory = ScrapYard.Instance.TheInventory.RemovePart(iPart, ComparisonStrength.STRICT);
+                    }
 
                     if (inInventory != null)
                     {
@@ -162,7 +192,7 @@ namespace ScrapYard.Utilities
                         //add funds back if active
                         if (ScrapYard.Instance.Settings.CurrentSaveSettings.OverrideFunds)
                         {
-                            Funding.Instance?.AddFunds(inInventory.DryCost, TransactionReasons.VesselRollout);
+                            Funding.Instance?.AddFunds(GetInventoryUseRefund(inInventory), TransactionReasons.VesselRollout);
                         }
                     }
                     else
@@ -201,7 +231,15 @@ namespace ScrapYard.Utilities
                 if (iPart.TrackerModule.Inventoried)
                 {
                     //find a corresponding one in the inventory and remove it
-                    InventoryPart inInventory = ScrapYard.Instance.TheInventory.RemovePart(iPart, ComparisonStrength.STRICT);
+                    InventoryPart inInventory = ScrapYard.Instance.TheInventory.FindPart(iPart.ID);
+                    if (inInventory != null && inInventory.Name == iPart.Name)
+                    {
+                        inInventory = ScrapYard.Instance.TheInventory.RemovePart(iPart.ID);
+                    }
+                    else
+                    {
+                        inInventory = ScrapYard.Instance.TheInventory.RemovePart(iPart, ComparisonStrength.STRICT);
+                    }
 
                     //if one was found...
                     if (inInventory != null)
@@ -210,7 +248,7 @@ namespace ScrapYard.Utilities
                         //add funds back if active
                         if (ScrapYard.Instance.Settings.CurrentSaveSettings.OverrideFunds)
                         {
-                            Funding.Instance?.AddFunds(inInventory.DryCost, TransactionReasons.VesselRollout);
+                            Funding.Instance?.AddFunds(GetInventoryUseRefund(inInventory), TransactionReasons.VesselRollout);
                         }
                     }
                     else
@@ -218,9 +256,9 @@ namespace ScrapYard.Utilities
                         //reset their tracker status
                         Logging.Log($"Found inventory part on vessel that is not in inventory. Resetting. {iPart.Name}:{iPart.ID}");
                         ConfigNode tracker = partNode.GetNodes("MODULE").FirstOrDefault(n => n.GetValue("name") == "ModuleSYPartTracker");
-                        tracker.SetValue("ID", Guid.NewGuid().ToString());
-                        tracker.SetValue("TimeRecovered", 0);
-                        tracker.SetValue("Inventoried", false);
+                        tracker.SetValue("id", FlightGlobals.GetUniquepersistentId().ToString(), true);
+                        tracker.SetValue("TimesRecovered", 0, true);
+                        tracker.SetValue("Inventoried", false, true);
                     }
                 }
                 else
@@ -230,9 +268,9 @@ namespace ScrapYard.Utilities
                     ConfigNode tracker = partNode.GetNodes("MODULE").FirstOrDefault(n => n.GetValue("name") == "ModuleSYPartTracker");
                     if (tracker != null)
                     {
-                        tracker.SetValue("ID", Guid.NewGuid().ToString());
-                        tracker.SetValue("TimeRecovered", 0);
-                        tracker.SetValue("Inventoried", false);
+                        tracker.SetValue("id", FlightGlobals.GetUniquepersistentId().ToString(), true);
+                        tracker.SetValue("TimesRecovered", 0, true);
+                        tracker.SetValue("Inventoried", false, true);
                     }
                 }
             }

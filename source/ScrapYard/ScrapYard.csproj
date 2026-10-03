@@ -106,6 +106,7 @@
     <Compile Include="Utilities\EditorHandling.cs" />
     <Compile Include="Utilities\EventBehavior.cs" />
     <Compile Include="Utilities\InventoryManagement.cs" />
+    <Compile Include="Utilities\InventoryDisplayMetadata.cs" />
     <Compile Include="Utilities\Logging.cs" />
     <Compile Include="Utilities\MathParsing.cs" />
     <Compile Include="Utilities\PartCategoryFilter.cs" />
@@ -128,7 +129,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v17.0\TextTemplating\Microsoft.TextTemplating.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v17.0\TextTemplating\Microsoft.TextTemplating.targets" Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v17.0\TextTemplating\Microsoft.TextTemplating.targets')" />
   <PropertyGroup>
     <PreBuildEvent>"$(DevEnvDir)\TextTransform.exe" "$(ProjectDir)Properties\Version.tt" 
     </PreBuildEvent>
@@ -143,8 +144,8 @@ IF "%25K112%25"=="" (
 	rem GOTO DONE
 )
 del $(TargetDir)\*.pdb
-start /D $(SolutionDir)..\ /WAIT _addonDeploy.bat
-if $(ConfigurationName) == Release start /D $(SolutionDir)..\  /WAIT _addonRelease.bat
+if exist "$(SolutionDir)..\_addonDeploy.bat" call "$(SolutionDir)..\_addonDeploy.bat"
+if "$(ConfigurationName)" == "Release" if exist "$(SolutionDir)..\_addonRelease.bat" call "$(SolutionDir)..\_addonRelease.bat"
 del $(TargetDir)\*.tmp
 :DONE
 	</PostBuildEvent>
