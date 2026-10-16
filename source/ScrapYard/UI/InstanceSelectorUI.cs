@@ -11,13 +11,14 @@ namespace ScrapYard.UI
     public class InstanceSelectorUI : WindowBase
     {
         //private const string Text = "Use New Part";
-        private const string Text = "#SYD-GUI-20";
+        //private const string Text = "#SYD-GUI-20";
         protected Vector2 scrollPos;
 
 
         public InstanceSelectorVM InstanceVM { get; set; }
 
-        public InstanceSelectorUI() : base(3742, "Inventory", true, false)
+        //public InstanceSelectorUI() : base(3742, "Inventory", true, false)
+        public InstanceSelectorUI() : base(3742, Localizer.Format("#SYD-GUI-22"), true, false)
         {
             SetVisibleScenes(GameScenes.EDITOR);
             SetSize(500, 100, 300, Screen.height - 200);

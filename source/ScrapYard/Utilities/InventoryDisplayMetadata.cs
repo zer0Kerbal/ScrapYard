@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Reflection;
+using KSP.Localization;
 
 namespace ScrapYard.Utilities
 {
@@ -25,16 +26,19 @@ namespace ScrapYard.Utilities
         {
             get
             {
-                string label = Generation.HasValue
-                    ? string.Format("Gen {0} | Uses {1}", Generation.Value, PreviousUses)
-                    : string.Format("Uses {0}", PreviousUses);
-
+                if (Generation.HasValue)
+                {
+                    if (SafetyRating.HasValue)
+                    {
+                        return Localizer.Format("#SYD-META-GUS", Generation.Value, PreviousUses, SafetyRating.Value);
+                    }
+                    return Localizer.Format("#SYD-META-GU", Generation.Value, PreviousUses);
+                }
                 if (SafetyRating.HasValue)
                 {
-                    label += string.Format(" | SR {0}", SafetyRating.Value);
+                    return Localizer.Format("#SYD-META-US", PreviousUses, SafetyRating.Value);
                 }
-
-                return label;
+                return Localizer.Format("#SYD-META-U", PreviousUses);
             }
         }
 
