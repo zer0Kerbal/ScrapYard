@@ -99,7 +99,10 @@ namespace ScrapYard
                 {
                     iPart.TrackerModule.TimesRecovered++;
                 }
-                ScrapYard.Instance.TheInventory.AddPart(iPart);
+                if (ScrapYard.Instance.TheInventory.AddPart(iPart) != null)
+                {
+                    settleRefund(iPart, incrementRecovery);
+                }
             }
         }
 
@@ -121,7 +124,10 @@ namespace ScrapYard
                 {
                     iPart.TrackerModule.TimesRecovered++;
                 }
-                ScrapYard.Instance.TheInventory.AddPart(iPart);
+                if (ScrapYard.Instance.TheInventory.AddPart(iPart) != null)
+                {
+                    settleRefund(iPart, incrementRecovery);
+                }
             }
         }
 
@@ -144,7 +150,12 @@ namespace ScrapYard
                 iPart.TrackerModule.TimesRecovered++;
             }
 
-            return (ScrapYard.Instance.TheInventory.AddPart(iPart) != null);
+            if (ScrapYard.Instance.TheInventory.AddPart(iPart) == null)
+            {
+                return false;
+            }
+            settleRefund(iPart, incrementRecovery);
+            return true;
         }
 
         /// <summary>
@@ -166,7 +177,28 @@ namespace ScrapYard
                 iPart.TrackerModule.TimesRecovered++;
             }
 
-            return (ScrapYard.Instance.TheInventory.AddPart(iPart) != null);
+            if (ScrapYard.Instance.TheInventory.AddPart(iPart) == null)
+            {
+                return false;
+            }
+            settleRefund(iPart, incrementRecovery);
+            return true;
+        }
+
+        /// <summary>
+        /// A part added back without a recovery (KCT edits and scrapping) pays back the refund it got when it left
+        /// the inventory; a recovered part was paid for by the recovery, so its refund is just forgotten
+        /// </summary>
+        private void settleRefund(InventoryPart part, bool recovered)
+        {
+            if (recovered)
+            {
+                ScrapYard.Instance.RefundLedger.Take(part.ID);
+            }
+            else
+            {
+                InventoryManagement.ReturnRefund(part);
+            }
         }
 
         /// <summary>
@@ -358,8 +390,10 @@ namespace ScrapYard
             {
                 return true;
             }
-            //try to get the ID out of the list
-            uint? ID = parts.FirstOrDefault()?.persistentId;
+            //mark the vessel by the ScrapYard ID of its root part, not its persistentId: KCT gets this ID from
+            //GetPartID and hands it back to SetProcessedStatus_ID, so both must use the same one
+            Part root = parts.FirstOrDefault();
+            uint? ID = root == null ? (uint?)null : new InventoryPart(root).ID;
             if (!ID.HasValue)
             {
                 return false; //for now we can't process this vessel. Sorry. Maybe later we'll be able to add the module
@@ -392,12 +426,14 @@ namespace ScrapYard
             {
                 return true;
             }
-            //try to get the ID out of the list
-            uint ID = 0;
-            if (partNodes.FirstOrDefault()?.TryGetValue("persistentId", ref ID) != true)
+            //mark the vessel by the ScrapYard ID of its root part, not its persistentId: KCT gets this ID from
+            //GetPartID and hands it back to SetProcessedStatus_ID, so both must use the same one
+            ConfigNode root = partNodes.FirstOrDefault();
+            if (root == null)
             {
                 return false; //for now we can't process this vessel. Sorry. Maybe later we'll be able to add the module
             }
+            uint ID = new InventoryPart(root).ID;
 
             //check that it isn't already processed
             if (ScrapYard.Instance.ProcessedTracker.IsProcessed(ID))

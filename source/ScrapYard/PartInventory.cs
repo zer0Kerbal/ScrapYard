@@ -48,6 +48,17 @@ namespace ScrapYard
                 return null;
             }
             part.TrackerModule.Inventoried = true;
+            //a part can only be in the inventory once: keep the copy that was used the most
+            InventoryPart sameID = internalInventory.FirstOrDefault(ip => ip.ID == part.ID);
+            if (sameID != null)
+            {
+                Logging.Log($"Part {part.Name}:{part.ID} is already in the inventory. Keeping the copy with the most uses.");
+                if (sameID.TrackerModule.TimesRecovered >= part.TrackerModule.TimesRecovered)
+                {
+                    return sameID;
+                }
+                internalInventory.Remove(sameID);
+            }
             //run auto-refurbishment
             ScrapYard.Instance.Settings.AutomaticRefurbishment.ForEach(r => r.Refurbish(part));
             internalInventory.Add(part);
@@ -301,6 +312,15 @@ namespace ScrapYard
                             State = inventoryPartNode
                         };
                         internalInventory.Add(loading);
+                    }
+
+                    //older saves can have the same part more than once: keep the copy that was used the most
+                    List<InventoryPart> duplicates = internalInventory.GroupBy(ip => ip.ID)
+                        .SelectMany(g => g.OrderByDescending(ip => ip.TrackerModule.TimesRecovered).Skip(1)).ToList();
+                    if (duplicates.Count > 0)
+                    {
+                        duplicates.ForEach(ip => internalInventory.Remove(ip));
+                        Logging.Log($"Removed {duplicates.Count} duplicated inventory entries (same part ID stored more than once).");
                     }
                 }
                 catch (Exception ex)

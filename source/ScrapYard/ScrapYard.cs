@@ -13,6 +13,7 @@ namespace ScrapYard
         public PartInventory TheInventory { get; } = new PartInventory();
         public GlobalSettings Settings { get; } = new GlobalSettings();
         public VesselTracker ProcessedTracker { get; } = new VesselTracker();
+        public RefundLedger RefundLedger { get; } = new RefundLedger();
         public PartTracker PartTracker { get; } = new PartTracker();
         public PartCategoryFilter PartCategory { get; } = new PartCategoryFilter();
 
@@ -54,6 +55,7 @@ namespace ScrapYard
             TheInventory.State = node.GetNode("PartInventory");
             PartTracker.State = node.GetNode("PartTracker");
             ProcessedTracker.State = node.GetNode("VesselTracker");
+            RefundLedger.State = node.GetNode("RefundLedger");
             //load settings?
             Logging.DebugLog("OnLoad Complete");
 
@@ -67,6 +69,7 @@ namespace ScrapYard
             node.AddNode(TheInventory.State);
             node.AddNode(PartTracker.State);
             node.AddNode(ProcessedTracker.State);
+            node.AddNode(RefundLedger.State);
             //save settings?
             Logging.DebugLog("OnSave Complete");
         }
