@@ -91,6 +91,7 @@
     <Compile Include="ModuleTemplates\ModuleTemplateList.cs" />
     <Compile Include="PartInventory.cs" />
     <Compile Include="PartTracker.cs" />
+    <Compile Include="RefundLedger.cs" />
     <Compile Include="Refurbishment\BasicRefurb.cs" />
     <Compile Include="ScrapYard.cs" />
     <Compile Include="Settings\GlobalSettings.cs" />

@@ -90,6 +90,8 @@ namespace ScrapYard
                         InventoryPart recoveredPart = new InventoryPart(pps);
                         recoveredPart.TrackerModule.TimesRecovered++;
                         ScrapYard.Instance.TheInventory.AddPart(recoveredPart);
+                        //the recovery pays for the part, so a refund given when it left the inventory is settled
+                        ScrapYard.Instance.RefundLedger.Take(recoveredPart.ID);
                         if (HighLogic.CurrentGame.Parameters.CustomParams<SaveSpecificSettings>().OverrideFunds)
                         {
                             Funding.Instance?.AddFunds(-1 * recoveredPart.DryCost, TransactionReasons.VesselRecovery);
@@ -113,7 +115,7 @@ namespace ScrapYard
             //If vessel not processed, then take parts
             //If already processed, just return
 
-            if (ScrapYard.Instance.ProcessedTracker.Remove(vessel.Parts[0].persistentId))
+            if (ScrapYard.Instance.ProcessedTracker.Remove(new InventoryPart(vessel.Parts[0]).ID))
             {
                 return;
             }

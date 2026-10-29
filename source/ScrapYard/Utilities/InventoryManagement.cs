@@ -166,6 +166,35 @@ namespace ScrapYard.Utilities
         }
 
         /// <summary>
+        /// Refunds the use of an inventory part if funds are overridden, once per trip out of the inventory
+        /// </summary>
+        /// <param name="part">The part that left the inventory</param>
+        private static void RefundUse(InventoryPart part)
+        {
+            if (!ScrapYard.Instance.Settings.CurrentSaveSettings.OverrideFunds || ScrapYard.Instance.RefundLedger.Contains(part.ID))
+            {
+                return;
+            }
+            double refund = GetInventoryUseRefund(part);
+            Funding.Instance?.AddFunds(refund, TransactionReasons.VesselRollout);
+            ScrapYard.Instance.RefundLedger.Record(part.ID, refund);
+        }
+
+        /// <summary>
+        /// Pays back the refund of a part that returns to the inventory without being recovered (KCT edits and scrapping)
+        /// </summary>
+        /// <param name="part">The part that returned to the inventory</param>
+        public static void ReturnRefund(InventoryPart part)
+        {
+            double refund = ScrapYard.Instance.RefundLedger.Take(part.ID);
+            if (refund != 0 && ScrapYard.Instance.Settings.CurrentSaveSettings.OverrideFunds)
+            {
+                Funding.Instance?.AddFunds(-refund, TransactionReasons.VesselRollout);
+                Logging.DebugLog($"Paid back the refund of {part.Name}:{part.ID} ({refund} funds)");
+            }
+        }
+
+        /// <summary>
         /// Removes any inventory parts from the inventory (vessel rollout, KCT construction)
         /// </summary>
         /// <param name="input">The vessel as a list of parts.</param>
@@ -190,10 +219,7 @@ namespace ScrapYard.Utilities
                     {
                         Logging.DebugLog($"Removed a part in inventory for {inInventory.Name} id: {inInventory.ID}");
                         //add funds back if active
-                        if (ScrapYard.Instance.Settings.CurrentSaveSettings.OverrideFunds)
-                        {
-                            Funding.Instance?.AddFunds(GetInventoryUseRefund(inInventory), TransactionReasons.VesselRollout);
-                        }
+                        RefundUse(inInventory);
                     }
                     else
                     {
@@ -246,10 +272,7 @@ namespace ScrapYard.Utilities
                     {
                         Logging.DebugLog($"Removed a part in inventory for {inInventory.Name} id: {inInventory.ID}");
                         //add funds back if active
-                        if (ScrapYard.Instance.Settings.CurrentSaveSettings.OverrideFunds)
-                        {
-                            Funding.Instance?.AddFunds(GetInventoryUseRefund(inInventory), TransactionReasons.VesselRollout);
-                        }
+                        RefundUse(inInventory);
                     }
                     else
                     {
