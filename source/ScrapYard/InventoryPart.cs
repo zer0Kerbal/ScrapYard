@@ -396,6 +396,18 @@ namespace ScrapYard
                         {
                             copyNode = new ConfigNode("MODULE");
                             defaultModule?.Save(copyNode);
+                            //modules no template tracks keep what the part has now (editor settings, craft file);
+                            //only modules that are tracked and differ from the default (or have upgrades) go back to the default
+                            if (!part.Modules.Contains(modName))
+                            {
+                                continue;
+                            }
+                            ConfigNode currentNode = new ConfigNode("MODULE");
+                            part.Modules[modName].Save(currentNode);
+                            if (!ScrapYard.Instance.Settings.ModuleTemplates.CheckForMatch(Name, currentNode))
+                            {
+                                continue;
+                            }
                         }
                         if (copyNode.HasData)
                         {
